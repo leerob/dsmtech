@@ -309,6 +309,45 @@ export const COMPANIES = [
         careers: 'http://www.smart-ag.com/careers/',
         lat: '41.997751',
         lng: '-93.632454'
+    },
+    {
+        name: 'Wellmark',
+        category: 'Private',
+        description:
+            'Wellmark Blue Cross and Blue Shield and its subsidiaries provide health coverage to more than 2 million members in Iowa and South Dakota.',
+        facebook: 'WellmarkBCBS',
+        instagram: 'wellmarkbcbs',
+        twitter: 'wellmarkbcbs',
+        linkedin: 'wellmark',
+        careers: 'www.wellmark.com/careers',
+        lat: '41.586258',
+        lng: '-93.634036'
+    },
+    {
+        name: 'Conga',
+        category: 'Private',
+        description:
+            'Conga’s suite of solutions creates more efficient organizations by simplifying and automating data, documents, contracts and reporting.',
+        facebook: 'getconga',
+        instagram: 'congateam',
+        twitter: 'getconga',
+        linkedin: 'conga',
+        careers: 'https://getconga.com/about/careers/',
+        lat: '41.589637',
+        lng: '-93.755333'
+    },
+    {
+        name: 'WorkHound',
+        category: 'Startup',
+        description:
+            'WorkHound is an employee engagement mobile platform initially focusing on the trucking industry. WorkHound creates a three-step feedback loop for drivers of trucking companies to identify issues and areas of improvement.',
+        facebook: 'workhoundapp',
+        instagram: 'workhoundapp',
+        twitter: 'workhoundapp',
+        linkedin: 'workhound',
+        careers: 'https://angel.co/workhound/jobs',
+        lat: '41.586846',
+        lng: '-93.624551'
     }
     // {
     //   name: "",
