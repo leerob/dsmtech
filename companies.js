@@ -8,8 +8,8 @@ export const COMPANIES = [
         twitter: 'hyvee',
         linkedin: 'hy-vee',
         careers: 'https://innovate.hy-vee.com/',
-        lat: '41.657266',
-        lng: '-93.793181'
+        lat: 41.657266,
+        lng: -93.793181
     },
     {
         name: 'Dwolla',
@@ -21,8 +21,8 @@ export const COMPANIES = [
         twitter: 'dwolla',
         linkedin: 'dwolla',
         careers: 'https://www.dwolla.com/careers/',
-        lat: '41.585465',
-        lng: '-93.625151'
+        lat: 41.585465,
+        lng: -93.625151
     },
     {
         name: 'Workiva',
@@ -34,8 +34,8 @@ export const COMPANIES = [
         twitter: 'workiva',
         linkedin: 'workiva',
         careers: 'https://www.workiva.com/careers',
-        lat: '41.995880',
-        lng: '-93.638178'
+        lat: 41.99588,
+        lng: -93.638178
     },
     {
         name: 'Granular',
@@ -47,8 +47,8 @@ export const COMPANIES = [
         twitter: 'granularag',
         linkedin: 'granular',
         careers: 'https://granular.ag/careers/',
-        lat: '41.671495',
-        lng: '-93.739462'
+        lat: 41.671495,
+        lng: -93.739462
     },
     {
         name: 'Principal',
@@ -60,8 +60,8 @@ export const COMPANIES = [
         twitter: 'principal',
         linkedin: 'principalfinancialgroup',
         careers: 'https://www.principal.com/about-us/careers',
-        lat: '41.588806',
-        lng: '-93.627547'
+        lat: 41.588806,
+        lng: -93.627547
     },
     {
         name: 'John Deere',
@@ -73,8 +73,8 @@ export const COMPANIES = [
         twitter: 'johndeere',
         linkedin: 'john-deere',
         careers: 'https://www.deere.com/en/our-company/john-deere-careers/',
-        lat: '41.674853',
-        lng: '-93.739731'
+        lat: 41.674853,
+        lng: -93.739731
     },
     {
         name: 'Pillar',
@@ -86,8 +86,8 @@ export const COMPANIES = [
         twitter: 'pillartech',
         linkedin: 'pillar-technology',
         careers: 'https://pillartechnology.com/careers',
-        lat: '41.584348',
-        lng: '-93.635427'
+        lat: 41.584348,
+        lng: -93.635427
     },
     {
         name: 'Denim',
@@ -99,8 +99,8 @@ export const COMPANIES = [
         twitter: 'denim',
         linkedin: 'denim-labs',
         careers: 'https://denimlabs.com/company/careers/',
-        lat: '41.586262',
-        lng: '-93.626680'
+        lat: 41.586262,
+        lng: -93.62668
     },
     {
         name: 'Happy Medium',
@@ -112,8 +112,8 @@ export const COMPANIES = [
         twitter: 'itsahappymedium',
         linkedin: 'happy-medium',
         careers: 'https://itsahappymedium.com/jobs/',
-        lat: '41.583387',
-        lng: '-93.621323'
+        lat: 41.583387,
+        lng: -93.621323
     },
     {
         name: 'Corteva',
@@ -125,8 +125,8 @@ export const COMPANIES = [
         twitter: 'corteva',
         linkedin: 'corteva',
         careers: 'http://www.dow-dupont.com/about-dow-dupont/careers/default.aspx',
-        lat: '41.671365',
-        lng: '-93.714661'
+        lat: 41.671365,
+        lng: -93.714661
     },
     {
         name: 'Wells Fargo',
@@ -138,8 +138,8 @@ export const COMPANIES = [
         twitter: 'wellsfargo',
         linkedin: 'wellsfargo',
         careers: 'https://www.wellsfargo.com/about/careers/',
-        lat: '41.585085',
-        lng: '-93.627570'
+        lat: 41.585085,
+        lng: -93.62757
     },
     {
         name: 'Bunchball',
@@ -151,8 +151,8 @@ export const COMPANIES = [
         twitter: 'bunchball',
         linkedin: 'bunchball',
         careers: 'https://www.bunchball.com/careers',
-        lat: '41.585715',
-        lng: '-93.612995'
+        lat: 41.585715,
+        lng: -93.612995
     },
     {
         name: 'Shift',
@@ -164,8 +164,8 @@ export const COMPANIES = [
         twitter: 'shiftdsm',
         linkedin: 'shift-interactive-llc',
         careers: 'https://www.shiftdsm.com/careers/',
-        lat: '41.593308',
-        lng: '-93.760116'
+        lat: 41.593308,
+        lng: -93.760116
     },
     {
         name: 'Meredith',
@@ -177,8 +177,8 @@ export const COMPANIES = [
         twitter: 'MeredithCorp',
         linkedin: 'meredith',
         careers: 'https://www.meredith.com/careers',
-        lat: '41.583539',
-        lng: '-93.639287'
+        lat: 41.583539,
+        lng: -93.639287
     },
     {
         name: 'QCI',
@@ -190,8 +190,8 @@ export const COMPANIES = [
         twitter: 'qci',
         linkedin: 'qci',
         careers: 'http://qci.com/careers/',
-        lat: '41.593196',
-        lng: '-93.762950'
+        lat: 41.593196,
+        lng: -93.76295
     },
     {
         name: 'BirdDogHR',
@@ -203,8 +203,8 @@ export const COMPANIES = [
         twitter: 'BirdDogHR',
         linkedin: 'BirdDogHR',
         careers: 'https://birddoghr.com/company/careers',
-        lat: '41.642933',
-        lng: '-93.765199'
+        lat: 41.642933,
+        lng: -93.765199
     },
     {
         name: 'Gain Compliance',
@@ -216,8 +216,8 @@ export const COMPANIES = [
         twitter: 'gaincompliance',
         linkedin: 'gain-compliance',
         careers: 'https://gaincompliance.com/careers/',
-        lat: '41.588158',
-        lng: '-93.612322'
+        lat: 41.588158,
+        lng: -93.612322
     },
     {
         name: 'Limelight Health',
@@ -229,8 +229,8 @@ export const COMPANIES = [
         twitter: 'limelighthealth',
         linkedin: 'limelight-health',
         careers: 'https://limelighthealth.bamboohr.com/jobs/',
-        lat: '41.586746',
-        lng: '-93.624551'
+        lat: 41.586746,
+        lng: -93.624551
     },
     {
         name: 'Vertex',
@@ -242,8 +242,8 @@ export const COMPANIES = [
         twitter: 'Vertexvis',
         linkedin: 'vertex-software',
         careers: 'https://www.vertexvis.com/careers/',
-        lat: '41.998619',
-        lng: '-93.638529'
+        lat: 41.998619,
+        lng: -93.638529
     },
     {
         name: 'Source Allies',
@@ -255,8 +255,8 @@ export const COMPANIES = [
         twitter: 'sourceallies',
         linkedin: 'source-allies-inc.',
         careers: 'https://www.sourceallies.com/careers/',
-        lat: '41.643678',
-        lng: '-93.765175'
+        lat: 41.643678,
+        lng: -93.765175
     },
     {
         name: 'Rocket Referrals',
@@ -268,8 +268,8 @@ export const COMPANIES = [
         twitter: 'rocketreferrals',
         linkedin: 'rocket-referrals',
         careers: 'https://rocketreferrals.workable.com/',
-        lat: '41.586846',
-        lng: '-93.624594'
+        lat: 41.586846,
+        lng: -93.624594
     },
     {
         name: 'Lean Techniques',
@@ -281,8 +281,8 @@ export const COMPANIES = [
         twitter: 'leantechniques',
         linkedin: 'lean-techniques-inc.',
         careers: 'https://leantechniques.com/careers/',
-        lat: '41.656396',
-        lng: '-93.745385'
+        lat: 41.656396,
+        lng: -93.745385
     },
     {
         name: 'LenderClose',
@@ -294,8 +294,8 @@ export const COMPANIES = [
         twitter: 'lenderclose',
         linkedin: 'lenderclose',
         careers: 'https://www.lenderclose.com/careers',
-        lat: '41.593376',
-        lng: '-93.760095'
+        lat: 41.593376,
+        lng: -93.760095
     },
     {
         name: 'Smart Ag',
@@ -307,8 +307,8 @@ export const COMPANIES = [
         twitter: 'smarter_ag',
         linkedin: 'smart-ag-llc',
         careers: 'http://www.smart-ag.com/careers/',
-        lat: '41.997751',
-        lng: '-93.632454'
+        lat: 41.997751,
+        lng: -93.632454
     },
     {
         name: 'Wellmark',
@@ -320,8 +320,8 @@ export const COMPANIES = [
         twitter: 'wellmarkbcbs',
         linkedin: 'wellmark',
         careers: 'www.wellmark.com/careers',
-        lat: '41.586258',
-        lng: '-93.634036'
+        lat: 41.586258,
+        lng: -93.634036
     },
     {
         name: 'Conga',
@@ -333,8 +333,8 @@ export const COMPANIES = [
         twitter: 'getconga',
         linkedin: 'conga',
         careers: 'https://getconga.com/about/careers/',
-        lat: '41.589637',
-        lng: '-93.755333'
+        lat: 41.589637,
+        lng: -93.755333
     },
     {
         name: 'WorkHound',
@@ -346,8 +346,8 @@ export const COMPANIES = [
         twitter: 'workhoundapp',
         linkedin: 'workhound',
         careers: 'https://angel.co/workhound/jobs',
-        lat: '41.586846',
-        lng: '-93.624551'
+        lat: 41.586846,
+        lng: -93.624551
     }
     // {
     //   name: "",

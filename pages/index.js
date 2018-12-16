@@ -1,5 +1,4 @@
 import React from 'react';
-import {createGlobalStyle} from 'styled-components';
 
 import Button from '../components/Button.js';
 import Card from '../components/Card';
@@ -9,24 +8,6 @@ import Footer from '../components/Footer.js';
 import Icon from '../components/Icon';
 
 import {COMPANIES} from '../companies';
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-  }
-
-  text-rendering: optimizeLegibility;
-
-  @font-face {
-    font-family: "Circular Std";
-    src: url("/static/fonts/CircularStd-Bold.otf");
-  }
-
-  @font-face {
-    font-family: "Rubik";
-    src: url("/static/fonts/Rubik-Light.ttf");
-  }
-`;
 
 const formatName = (name) => name.replace('_', ' ');
 
@@ -65,7 +46,6 @@ const createCard = (company) => (
 
 const Page = () => (
     <React.Fragment>
-        <GlobalStyle />
         <Header />
         <Grid>{COMPANIES.map((company) => createCard(company))}</Grid>
         <Footer />

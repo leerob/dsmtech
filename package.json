@@ -23,6 +23,7 @@
         "next-ga": "^2.3.4",
         "react": "^16.6.3",
         "react-dom": "^16.6.3",
+        "react-map-gl": "^4.0.5",
         "styled-components": "^4.0.0"
     },
     "devDependencies": {

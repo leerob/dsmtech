@@ -24,6 +24,7 @@ class MyApp extends App {
                 <Head>
                     <title>{`dsmtech - ${description}`}</title>
                     <meta charSet="utf-8" />
+                    <link href="https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css" rel="stylesheet" />
                     <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
                     <meta content="width=device-width, initial-scale=1" name="viewport" />
                     <link href="/static/favicon.ico" rel="shortcut icon" />
