@@ -1,0 +1,32 @@
+{
+    "name": "dsmtech",
+    "description": "The best tech companies and startups in the Greater Des Moines area.",
+    "version": "1.0.0",
+    "author": {
+        "name": "Lee Robinson",
+        "email": "lrobinson2011@gmail.com",
+        "url": "https://dsmtech.io"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/leerob/dsmtech.git"
+    },
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "prettier": "prettier --write \"**/*.{js,json,md,yml}\""
+    },
+    "dependencies": {
+        "next": "^7.0.2",
+        "next-ga": "^2.3.4",
+        "react": "^16.6.3",
+        "react-dom": "^16.6.3",
+        "styled-components": "^4.0.0"
+    },
+    "devDependencies": {
+        "babel-plugin-styled-components": "^1.8.0",
+        "prettier": "^1.15.3"
+    }
+}
