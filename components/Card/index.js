@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
-import Header from './Header';
 import Category from './Category';
+import Footer from './Footer';
+import Header from './Header';
 import Image from './Image';
+import Logo from './Logo';
+import SocialLink from './SocialLink';
 import Text from './Text';
 import Title from './Title';
-import Footer from './Footer';
-import Logo from './Logo';
 
 const Card = styled.div`
     background: #ffffff;
@@ -26,12 +27,13 @@ const Card = styled.div`
     }
 `;
 
-Card.Header = Header;
 Card.Category = Category;
+Card.Footer = Footer;
+Card.Header = Header;
 Card.Image = Image;
+Card.Logo = Logo;
+Card.SocialLink = SocialLink;
 Card.Text = Text;
 Card.Title = Title;
-Card.Footer = Footer;
-Card.Logo = Logo;
 
 export default Card;

@@ -199,7 +199,7 @@ export const COMPANIES = [
         description:
             'BirdDogHR simplifies talent management for hard-working organizations by providing recruitment and applicant tracking, onboarding, performance management, learning management, succession planning and managed services.',
         facebook: 'BirdDogHR',
-        instagram: 'BirdDogHR',
+        instagram: '',
         twitter: 'BirdDogHR',
         linkedin: 'BirdDogHR',
         careers: 'https://birddoghr.com/company/careers',
@@ -238,7 +238,7 @@ export const COMPANIES = [
         description:
             'Vertex empowers people to create and collaborate like never before. Our software accelerates discovery, innovation, and idea exchange. We inspire new and amazing things.',
         facebook: 'vertex-software',
-        instagram: 'vertex-software',
+        instagram: '',
         twitter: 'Vertexvis',
         linkedin: 'vertex-software',
         careers: 'https://www.vertexvis.com/careers/',
@@ -290,7 +290,7 @@ export const COMPANIES = [
         description:
             'A powerful web-based platform built for Refinance and Home Equity lenders. A single solution which aggregates industry vendors.',
         facebook: 'lenderclose',
-        instagram: 'lenderclose',
+        instagram: '',
         twitter: 'lenderclose',
         linkedin: 'lenderclose',
         careers: 'https://www.lenderclose.com/careers',
@@ -303,7 +303,7 @@ export const COMPANIES = [
         description:
             'Our vision at Smart Ag is to enable farmers to perfect their operation of farm equipment we believe it all starts by unlocking the potential of farmer not the acre, not the seed, and not the plant.',
         facebook: 'SmartAgEquipment',
-        instagram: 'smart-ag-llc',
+        instagram: '',
         twitter: 'smarter_ag',
         linkedin: 'smart-ag-llc',
         careers: 'http://www.smart-ag.com/careers/',

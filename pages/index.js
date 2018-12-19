@@ -6,7 +6,6 @@ import Card from '../components/Card';
 import Grid from '../components/Grid.js';
 import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
-import Icon from '../components/Icon';
 
 import {COMPANIES} from '../companies';
 
@@ -43,21 +42,13 @@ const createCard = (company) => (
         <Card.Text>{company.description}</Card.Text>
         <Card.Footer>
             <div>
-                <a href={`https://www.instagram.com/${company.instagram}`} target="_blank">
-                    <Icon src="/static/icons/instagram.svg" />
-                </a>
-                <a href={`https://www.twitter.com/${company.twitter}`} target="_blank">
-                    <Icon src="/static/icons/twitter.svg" />
-                </a>
-                <a href={`https://www.facebook.com/${company.facebook}`} target="_blank">
-                    <Icon src="/static/icons/facebook.svg" />
-                </a>
-                <a href={`https://www.linkedin.com/company/${company.linkedin}`} target="_blank">
-                    <Icon src="/static/icons/linkedin.svg" />
-                </a>
+                <Card.SocialLink type="instagram" url={company.instagram} />
+                <Card.SocialLink type="twitter" url={company.twitter} />
+                <Card.SocialLink type="facebook" url={company.facebook} />
+                <Card.SocialLink type="linkedin" url={company.linkedin} />
             </div>
             <Button as="a" href={company.careers} target="_blank">
-                View Jobs
+                {'View Jobs'}
             </Button>
         </Card.Footer>
     </Card>
