@@ -156,7 +156,7 @@ export const COMPANIES = [
     },
     {
         name: 'Shift',
-        category: 'Startup',
+        category: 'Private',
         description:
             'Shift is a team of creative problem solvers building handcrafted digital solutions in Des Moines, Iowa.',
         facebook: 'shiftdsm',
@@ -348,6 +348,45 @@ export const COMPANIES = [
         careers: 'https://angel.co/workhound/jobs',
         lat: '41.586846',
         lng: '-93.624551'
+    },
+    {
+        name: 'LightEdge',
+        category: 'Private',
+        description:
+            'With over 20 years in business, LightEdge offers a full stack of IT services to provide flexibility, security, and control for any stage of a clients’ roadmap.',
+        facebook: 'LightEdgeSolutions',
+        instagram: '',
+        twitter: 'Lightedge',
+        linkedin: 'lightedge-solutions',
+        careers: 'https://www.lightedge.com/about/careers/',
+        lat: '41.586268',
+        lng: '-93.629315'
+    },
+    {
+        name: 'IP Pathways',
+        category: 'Private',
+        description:
+            'IP Pathways provides IT hardware and software, data center, cloud, security, professional and managed services to commercial and government customers throughout the Midwest.',
+        facebook: 'ippathways',
+        instagram: '',
+        twitter: 'IPPathways',
+        linkedin: 'ip-pathways',
+        careers: 'https://ippathways.com/about-us/careers/',
+        lat: '41.627622',
+        lng: '-93.767751'
+    },
+    {
+        name: 'ITA Group',
+        category: 'Private',
+        description:
+            'We create & manage engagement solutions that align & motivate every company’s most important asset: its people.',
+        facebook: 'ITAGroupInc',
+        instagram: 'itagroup',
+        twitter: 'ITAGroup',
+        linkedin: 'itagroup',
+        careers: 'https://www.itagroup.com/careers',
+        lat: '41.593852',
+        lng: '-93.766842'
     }
     // {
     //   name: "",
