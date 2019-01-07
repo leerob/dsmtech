@@ -387,6 +387,45 @@ export const COMPANIES = [
         careers: 'https://www.itagroup.com/careers',
         lat: '41.593852',
         lng: '-93.766842'
+    },
+    {
+        name: 'Pitchly',
+        category: 'Startup',
+        description:
+            'SaaS platform for law firms, banks, and accounting firms to organize and activate their client experience into databases and content.',
+        facebook: 'pitchlyinc',
+        instagram: '',
+        twitter: 'pitchlyinc',
+        linkedin: 'pitchly',
+        careers: 'https://pitchly.net',
+        lat: '41.589915',
+        lng: '-93.611034'
+    },
+    {
+        name: 'Kum and Go',
+        category: 'Private',
+        description:
+            'Kum & Go is a family-owned operation that employ 5,000+ associates in more than 400 stores across 11 states throughout the Midwest.',
+        facebook: 'kumandgo',
+        instagram: 'kumandgo',
+        twitter: 'kumandgo',
+        linkedin: 'kum-&-go',
+        careers: 'https://careers.kumandgo.com/corporate',
+        lat: '41.585575',
+        lng: '-93.636797'
+    },
+    {
+        name: 'Spinutech',
+        category: 'Private',
+        description:
+            'Spinutech is a web design, web development and web strategy company with locations in Cedar Falls, Des Moines, and Chicago.',
+        facebook: 'spinutech',
+        instagram: 'spinutech.inc',
+        twitter: 'spinutech',
+        linkedin: 'spinutech',
+        careers: 'https://www.spinutech.com/careers/',
+        lat: '41.608627',
+        lng: '-93.777831'
     }
     // {
     //   name: "",

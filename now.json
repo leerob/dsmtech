@@ -1,5 +1,6 @@
 {
     "version": 2,
     "name": "dsmtech",
-    "builds": [{"src": "package.json", "use": "@now/next@canary"}]
+    "builds": [{"src": "package.json", "use": "@now/next"}],
+    "alias": ["dsmtech.io", "www.dsmtech.io"]
 }

@@ -27,9 +27,9 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const formatName = (name) => name.replace('_', ' ');
+const formatName = (name) => name.replace('and', '&');
 
-const formatFilePath = (name) => name.replace(' ', '_').toLowerCase();
+const formatFilePath = (name) => name.replace(/ /g, '_').toLowerCase();
 
 const createCard = (company) => (
     <Card key={company.name}>

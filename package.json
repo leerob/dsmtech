@@ -15,8 +15,10 @@
     "scripts": {
         "dev": "next",
         "build": "next build",
+        "deploy": "now",
         "imageoptim": "imageoptim \"static/**/*.jpg\"",
         "start": "next start",
+        "release": "now alias",
         "prettier": "prettier --write \"**/*.{js,json,md,yml}\""
     },
     "husky": {
