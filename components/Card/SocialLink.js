@@ -27,7 +27,7 @@ const createUrl = (props) => {
 
 const SocialLink = (props) => (
     <Link href={createUrl(props)} hasUrl={props.url} target="_blank">
-        <Icon src={`/static/icons/${props.type}.svg`} />
+        <Icon alt={`${props.name} ${props.type}`} src={`/static/icons/${props.type}.svg`} />
     </Link>
 );
 

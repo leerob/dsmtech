@@ -18,11 +18,13 @@ const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: "Circular Std";
+    font-display: auto;
     src: url("/static/fonts/CircularStd-Bold.otf");
   }
 
   @font-face {
     font-family: "Rubik";
+    font-display: auto;
     src: url("/static/fonts/Rubik-Light.ttf");
   }
 `;
@@ -42,10 +44,10 @@ const createCard = (company) => (
         <Card.Text>{company.description}</Card.Text>
         <Card.Footer>
             <div>
-                <Card.SocialLink type="instagram" url={company.instagram} />
-                <Card.SocialLink type="twitter" url={company.twitter} />
-                <Card.SocialLink type="facebook" url={company.facebook} />
-                <Card.SocialLink type="linkedin" url={company.linkedin} />
+                <Card.SocialLink name={company.name} type="instagram" url={company.instagram} />
+                <Card.SocialLink name={company.name} type="twitter" url={company.twitter} />
+                <Card.SocialLink name={company.name} type="facebook" url={company.facebook} />
+                <Card.SocialLink name={company.name} type="linkedin" url={company.linkedin} />
             </div>
             <Button as="a" href={company.careers} target="_blank">
                 {'View Jobs'}
