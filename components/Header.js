@@ -5,17 +5,12 @@ const Header = styled.header`
     background-image: linear-gradient(to bottom right, #ff5f6d, #ffc371);
     height: 500px;
     position: relative;
-`;
-
-const BottomAngle = styled.svg`
-    bottom: 0;
-    height: 10vw;
-    position: absolute;
-    width: 100%;
+    overflow: hidden;
+    transform: skewY(-5deg);
+    transform-origin: 0;
 `;
 
 const Title = styled.h1`
-    color: white;
     color: white;
     font-family: 'Circular Std';
     font-size: 3rem;
@@ -24,6 +19,8 @@ const Title = styled.h1`
     padding: 180px 50px 0;
     position: relative;
     text-align: center;
+    transform: skewY(5deg);
+    transform-origin: 0;
 
     @media only screen and (max-width: 900px) {
         padding: 160px 100px 0;
@@ -45,7 +42,6 @@ const Title = styled.h1`
 
 const Subtitle = styled.div`
     color: white;
-    color: white;
     font-family: 'Rubik';
     font-size: 1.5rem;
     margin: 0;
@@ -54,15 +50,14 @@ const Subtitle = styled.div`
     padding-top: 20px;
     position: relative;
     text-align: center;
+    transform: skewY(5deg);
+    transform-origin: 0;
 `;
 
 const HeaderComponent = () => (
     <Header>
         <Title>{'The best tech jobs in Des Moines 🎉'}</Title>
         <Subtitle>{'Find your dream job today.'}</Subtitle>
-        <BottomAngle xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path fill="#fff" d="M0 100L100 0v100z" stroke="white" />
-        </BottomAngle>
     </Header>
 );
 export default HeaderComponent;
