@@ -426,6 +426,45 @@ export const COMPANIES = [
         careers: 'https://www.spinutech.com/careers/',
         lat: '41.608627',
         lng: '-93.777831'
+    },
+    {
+        name: 'AgriSync',
+        category: 'Startup',
+        description:
+            'AgriSync is an agriculture software company helping ag experts deliver better service at a fraction of the cost to maximize uptime for farmers.',
+        facebook: 'agrisync',
+        instagram: '',
+        twitter: 'agrisync',
+        linkedin: 'agrisync',
+        careers: 'https://www.agrisync.com/careers',
+        lat: '41.577822',
+        lng: '-93.866713'
+    },
+    {
+        name: 'CDS Global',
+        category: 'Private',
+        description:
+            'CDS Global uses the power of data and technology to help you acquire new consumers, manage your consumer relationships and drive revenue.',
+        facebook: 'CDSGlobal',
+        instagram: 'cdsglobalinc',
+        twitter: 'CDSGlobal',
+        linkedin: 'cds-global',
+        careers: 'https://hearst.referrals.selectminds.com/cds-global',
+        lat: '41.565793',
+        lng: '-93.639104'
+    },
+    {
+        name: 'Trility',
+        category: 'Private',
+        description:
+            'Trility Consulting is a business and technology solutions company who concentrates on delivering what you want, the way you want it, when you want it. We believe its your journey. We want to help. ',
+        facebook: '',
+        instagram: '',
+        twitter: 'trilitygroup',
+        linkedin: 'trility-consulting',
+        careers: 'https://www.linkedin.com/jobs/search/?f_C=11030289&locationId=OTHERS.worldwide',
+        lat: '41.635639',
+        lng: '-93.703664'
     }
     // {
     //   name: "",
