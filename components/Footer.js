@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {event} from 'next-ga/dist/analytics/prod';
 
 const Text = styled.div`
     font-family: 'Rubik';
@@ -12,7 +13,11 @@ const Text = styled.div`
 const Footer = () => (
     <Text>
         {'Created by '}
-        <a href="https://www.leejamesrobinson.com/" target="_blank">
+        <a
+            href="https://www.leejamesrobinson.com/"
+            onClick={() => event('Portfolio Click', 'Portfolio Click')}
+            target="_blank"
+        >
             {'Lee Robinson'}
         </a>
     </Text>

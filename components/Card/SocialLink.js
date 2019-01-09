@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {event} from 'next-ga/dist/analytics/prod';
 
 const Link = styled.a`
     opacity: ${(props) => (props.hasUrl ? '1' : '0.5')};
@@ -26,7 +27,7 @@ const createUrl = (props) => {
 };
 
 const SocialLink = (props) => (
-    <Link href={createUrl(props)} hasUrl={props.url} target="_blank">
+    <Link href={createUrl(props)} hasUrl={props.url} onClick={() => event(props.type, props.name)} target="_blank">
         <Icon alt={`${props.name} ${props.type}`} src={`/static/icons/${props.type}.svg`} />
     </Link>
 );

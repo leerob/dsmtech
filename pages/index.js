@@ -1,6 +1,7 @@
 import React from 'react';
-import {createGlobalStyle} from 'styled-components';
+import {event} from 'next-ga/dist/analytics/prod';
 
+import {formatName, formatFilePath, GlobalStyle} from '../components/utils';
 import Button from '../components/Button.js';
 import Card from '../components/Card';
 import Grid from '../components/Grid.js';
@@ -8,30 +9,6 @@ import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
 
 import {COMPANIES} from '../companies';
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-  }
-
-  text-rendering: optimizeLegibility;
-
-  @font-face {
-    font-family: "Circular Std";
-    font-display: auto;
-    src: url("/static/fonts/CircularStd-Bold.otf");
-  }
-
-  @font-face {
-    font-family: "Rubik";
-    font-display: auto;
-    src: url("/static/fonts/Rubik-Light.ttf");
-  }
-`;
-
-const formatName = (name) => name.replace('and', '&');
-
-const formatFilePath = (name) => name.replace(/ /g, '_').toLowerCase();
 
 const createCard = (company) => (
     <Card key={company.name}>
@@ -49,7 +26,7 @@ const createCard = (company) => (
                 <Card.SocialLink name={company.name} type="facebook" url={company.facebook} />
                 <Card.SocialLink name={company.name} type="linkedin" url={company.linkedin} />
             </div>
-            <Button as="a" href={company.careers} target="_blank">
+            <Button as="a" href={company.careers} target="_blank" onClick={() => event('Careers Link', company.name)}>
                 {'View Jobs'}
             </Button>
         </Card.Footer>
