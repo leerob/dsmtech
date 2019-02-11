@@ -319,7 +319,7 @@ export const COMPANIES = [
         instagram: 'wellmarkbcbs',
         twitter: 'wellmarkbcbs',
         linkedin: 'wellmark',
-        careers: 'www.wellmark.com/careers',
+        careers: 'https://www.wellmark.com/careers',
         lat: '41.586258',
         lng: '-93.634036'
     },
