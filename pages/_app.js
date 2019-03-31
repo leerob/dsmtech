@@ -26,7 +26,7 @@ class MyApp extends App {
                     <meta charSet="utf-8" />
                     <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
                     <meta content="width=device-width, initial-scale=1" name="viewport" />
-                    <link href="/static/favicon.ico" rel="shortcut icon" />
+                    <link href="/static/logo.ico" rel="shortcut icon" />
                     <meta content={description} name="description" />
                     <meta content="follow, index" name="robots" />
                     <meta property="og:title" content={`DSM Tech - ${description}`} />
