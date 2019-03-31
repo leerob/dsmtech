@@ -61,7 +61,6 @@ const NavBar = (props) => (
     <StyledNav removeBg={props.removeBg}>
         <Logo src="/static/logo.svg" />
         <NavLink>{'Home'}</NavLink>
-        <NavLink slug={'companies'}>{'Companies'}</NavLink>
         <NavLink slug={'about'}>{'About'}</NavLink>
     </StyledNav>
 );
