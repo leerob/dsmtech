@@ -1,45 +1,75 @@
 import React from 'react';
-import {event} from 'next-ga/dist/analytics/prod';
+import styled from 'styled-components';
 
-import {formatName, formatFilePath, GlobalStyle} from '../components/utils';
-import Button from '../components/Button.js';
-import Card from '../components/Card';
-import Grid from '../components/Grid.js';
-import Header from '../components/Header.js';
-import Footer from '../components/Footer.js';
+import {GlobalStyle} from '../components/utils';
+import NavBar from '../components/NavBar';
+import Link from '../components/Link';
 
-import {COMPANIES} from '../companies';
+const Container = styled.div`
+    padding: 120px 24px 24px 24px;
+    font-family: 'Rubik';
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    flex: 1;
+    margin: 0 auto;
+    max-width: 690px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 190px);
+    flex-direction: column;
 
-const createCard = (company) => (
-    <Card key={company.name}>
-        <Card.Header>
-            <Card.Image alt={formatName(company.name)} src={`/static/imgs/${formatFilePath(company.name)}.jpg`} />
-            <Card.Logo alt={formatName(company.name)} src={`/static/logos/${formatFilePath(company.name)}.jpg`} />
-            <Card.Category>{company.category}</Card.Category>
-            <Card.Title>{formatName(company.name)}</Card.Title>
-        </Card.Header>
-        <Card.Text>{company.description}</Card.Text>
-        <Card.Footer>
-            <div>
-                <Card.SocialLink name={company.name} type="instagram" url={company.instagram} />
-                <Card.SocialLink name={company.name} type="twitter" url={company.twitter} />
-                <Card.SocialLink name={company.name} type="facebook" url={company.facebook} />
-                <Card.SocialLink name={company.name} type="linkedin" url={company.linkedin} />
-            </div>
-            <Button as="a" href={company.careers} target="_blank" onClick={() => event('Careers Link', company.name)}>
-                {'View Jobs'}
-            </Button>
-        </Card.Footer>
-    </Card>
-);
+    @media (min-width: 737px) {
+        flex-direction: row;
+    }
+`;
+
+const Svg = styled.img`
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding-right: 50px;
+`;
+
+const Description = styled.h1`
+    width: 400px;
+    font-size: 24px;
+`;
+
+const Button = styled(Link)`
+    background: none;
+    border-radius: 4px;
+    border: 1px solid #0524d2;
+    color: #0524d2;
+    cursor: pointer;
+    font-family: 'Rubik';
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.15s ease;
+
+    :hover {
+        color: white;
+        background: #0524d2;
+    }
+`;
 
 const Page = () => (
-    <React.Fragment>
+    <>
         <GlobalStyle />
-        <Header />
-        <Grid>{COMPANIES.map((company) => createCard(company))}</Grid>
-        <Footer />
-    </React.Fragment>
+        <NavBar removeBg />
+        <Container>
+            <Svg src="/static/startup.svg" />
+            <div>
+                <Description>{'The best tech companies and startups in the Greater Des Moines area.'}</Description>
+                <Button slug={'companies'}>{'Explore Companies'}</Button>
+            </div>
+        </Container>
+    </>
 );
 
 export default Page;

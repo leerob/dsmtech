@@ -5,7 +5,7 @@ const Grid = styled.div`
     grid-template-columns: repeat(3, auto);
     justify-content: center;
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 120px;
 
     @media only screen and (max-width: 1000px) {
         grid-template-columns: repeat(2, auto);
