@@ -5,7 +5,7 @@ import Link from './Link';
 
 const StyledNav = styled.nav`
     padding: 25px;
-    box-shadow: ${(props) => (props.removeBg ? 'none' : '1px 1px 2px 0px #cfd8dc')};
+    box-shadow: 1px 1px 2px 0px #cfd8dc;
     font-family: 'Circular Std';
     font-size: 1rem;
     font-weight: 500;
@@ -14,7 +14,7 @@ const StyledNav = styled.nav`
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: ${(props) => (props.removeBg ? 'none' : 'white')};
+    background-color: white;
     z-index: 999;
 
     @media (min-width: 737px) {
@@ -57,8 +57,8 @@ const NavLink = styled(Link)`
     }
 `;
 
-const NavBar = (props) => (
-    <StyledNav removeBg={props.removeBg}>
+const NavBar = () => (
+    <StyledNav>
         <Logo src="/static/logo.svg" />
         <NavLink>{'Home'}</NavLink>
         <NavLink slug={'about'}>{'About'}</NavLink>
