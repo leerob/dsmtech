@@ -5,10 +5,10 @@ import {formatName, formatFilePath, GlobalStyle} from '../components/utils';
 import Button from '../components/Button.js';
 import Card from '../components/Card';
 import Grid from '../components/Grid.js';
-import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
 
 import {COMPANIES} from '../companies';
+import NavBar from '../components/NavBar';
 
 const createCard = (company) => (
     <Card key={company.name}>
@@ -34,12 +34,12 @@ const createCard = (company) => (
 );
 
 const Page = () => (
-    <React.Fragment>
+    <>
         <GlobalStyle />
-        <Header />
+        <NavBar />
         <Grid>{COMPANIES.map((company) => createCard(company))}</Grid>
         <Footer />
-    </React.Fragment>
+    </>
 );
 
 export default Page;
