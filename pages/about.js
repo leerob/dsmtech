@@ -6,7 +6,7 @@ import Footer from '../components/Footer.js';
 import NavBar from '../components/NavBar';
 
 const AboutContainer = styled.div`
-    padding-top: 120px;
+    padding-top: 80px;
     font-family: 'Rubik';
     font-size: 1rem;
     font-weight: 300;
@@ -15,6 +15,10 @@ const AboutContainer = styled.div`
     margin: 0 auto;
     max-width: 690px;
     width: 100%;
+
+    @media (min-width: 690px) {
+        padding-top: 120px;
+    }
 `;
 
 const About = styled.main`
