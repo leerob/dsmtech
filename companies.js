@@ -124,7 +124,7 @@ export const COMPANIES = [
         instagram: 'corteva',
         twitter: 'corteva',
         linkedin: 'corteva',
-        careers: 'http://www.dow-dupont.com/about-dow-dupont/careers/default.aspx',
+        careers: 'https://careers.corteva.com/',
         lat: '41.671365',
         lng: '-93.714661'
     },
