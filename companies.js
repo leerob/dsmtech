@@ -465,17 +465,56 @@ export const COMPANIES = [
         careers: 'https://www.linkedin.com/jobs/search/?f_C=11030289&locationId=OTHERS.worldwide',
         lat: '41.635639',
         lng: '-93.703664'
+    },
+    {
+        name: 'Hatchlings',
+        category: 'Startup',
+        description:
+            'Hatchlings makes social games for Facebook, iOS, and Android and has entertained over 10 million players since being founded in 2008.',
+        facebook: 'hatchlings',
+        instagram: '',
+        twitter: 'hatchlings',
+        linkedin: '',
+        careers: 'https://careers.hatchlings.com/',
+        lat: '41.586770,',
+        lng: '-93.623944'
+    },
+    {
+        name: 'Structurely',
+        category: 'Startup',
+        description:
+            'Structurely builds industry-leading artificial intelligence lead engagement software for top producing real estate organizations.',
+        facebook: 'structurely',
+        instagram: 'structurely',
+        twitter: 'structurelyre',
+        linkedin: 'structurely',
+        careers: 'https://structurely.recruitee.com/',
+        lat: '42.049570',
+        lng: '-93.644796'
+    },
+    {
+        name: 'Tractor Zoom',
+        category: 'Startup',
+        description:
+            'Farm equipment auctions at your fingertips. View upcoming auctions, browse and search machinery beforehand.',
+        facebook: 'TractorZoom',
+        instagram: 'tractorzoom',
+        twitter: 'tractorzoom',
+        linkedin: 'tractor-zoom',
+        careers: 'https://tractorzoom.com/about-us/careers/',
+        lat: '41.573298',
+        lng: '-93.709277'
     }
-    // {
-    //   name: "",
-    //   category: "",
-    //   description: "",
-    //   facebook: "",
-    //   instagram: "",
-    //   twitter: "",
-    //   linkedin: "",
-    //   careers: "",
-    //   lat: '',
-    //   lng: ''
-    // }
+    //   {
+    //     name: "",
+    //     category: "",
+    //     description: "",
+    //     facebook: "",
+    //     instagram: "",
+    //     twitter: "",
+    //     linkedin: "",
+    //     careers: "",
+    //     lat: '',
+    //     lng: ''
+    //   }
 ];
