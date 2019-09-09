@@ -65,7 +65,7 @@ export const COMPANIES = [
     },
     {
         name: 'John Deere',
-        category: 'Private',
+        category: 'Public',
         description:
             'John Deere is an American corporation that manufactures agricultural, construction, and forestry machinery, diesel engines, drivetrains used in heavy equipment, and lawn care equipment.',
         facebook: 'johndeere',
