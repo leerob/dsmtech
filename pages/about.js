@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {GlobalStyle} from '../components/utils';
 import Footer from '../components/Footer.js';
 import NavBar from '../components/NavBar';
 
@@ -67,11 +66,10 @@ const ProgrammerSvg = styled.img`
 
 const Page = () => (
     <>
-        <GlobalStyle />
         <NavBar />
         <AboutContainer>
             <About>
-                <ProgrammerSvg src="/static/programmer.svg" />
+                <ProgrammerSvg src="/programmer.svg" />
                 <p>
                     {`
                     When Lee Robinson set out to find a new job as a developer in the Des Moines area,
@@ -95,7 +93,7 @@ const Page = () => (
                     </StyledLink>
                 </p>
                 <a href="https://innovationia.com/2019/01/03/dsmtech-io-launches-for-tech-job-seekers-scouting-des-moines/">
-                    <InnovationIowa src="/static/innovation-iowa.png" />
+                    <InnovationIowa src="/innovation-iowa.png" />
                 </a>
             </About>
         </AboutContainer>

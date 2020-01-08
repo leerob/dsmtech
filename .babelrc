@@ -1,8 +1,13 @@
 {
-  "presets": [
-    "next/babel"
-  ],
-  "plugins": [
-    "styled-components"
-  ]
+    "presets": ["next/babel"],
+    "plugins": [
+        [
+            "styled-components",
+            {
+                "displayName": true,
+                "preprocess": false,
+                "ssr": true
+            }
+        ]
+    ]
 }

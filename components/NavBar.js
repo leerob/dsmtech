@@ -59,7 +59,7 @@ const NavLink = styled(Link)`
 
 const NavBar = () => (
     <StyledNav>
-        <Logo src="/static/logo.svg" />
+        <Logo src="/logo.svg" />
         <NavLink>{'Home'}</NavLink>
         <NavLink slug={'about'}>{'About'}</NavLink>
     </StyledNav>
