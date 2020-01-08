@@ -32,7 +32,7 @@ const createCard = (company) => (
                 target="_blank"
                 onClick={() =>
                     gtag.event({
-                        category: 'Careers Link',
+                        action: 'Careers Link',
                         label: company.name
                     })
                 }

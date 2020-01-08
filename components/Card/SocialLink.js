@@ -33,7 +33,7 @@ const SocialLink = (props) => (
         hasUrl={props.url}
         onClick={() =>
             gtag.event({
-                category: props.type,
+                action: props.type,
                 label: props.name
             })
         }

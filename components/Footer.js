@@ -18,7 +18,7 @@ const Footer = () => (
             href="https://www.leejamesrobinson.com/"
             onClick={() =>
                 gtag.event({
-                    category: 'Portfolio Click',
+                    action: 'Portfolio Click',
                     label: 'Portfolio Click'
                 })
             }
