@@ -11,13 +11,13 @@ export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: "Circular Std";
     font-display: auto;
-    src: url("/static/fonts/CircularStd-Bold.otf");
+    src: url("/fonts/CircularStd-Bold.otf");
   }
 
   @font-face {
     font-family: "Rubik";
     font-display: auto;
-    src: url("/static/fonts/Rubik-Light.ttf");
+    src: url("/fonts/Rubik-Light.ttf");
   }
 `;
 

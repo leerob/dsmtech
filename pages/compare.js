@@ -66,7 +66,7 @@ const CategoryCell = styled(TableCell)`
     }
 `;
 
-const CheckmarkIcon = () => <img src="/static/icons/check.svg" />;
+const CheckmarkIcon = () => <img src="/icons/check.svg" />;
 
 const TableColumn = (props) => {
     const isDisabled = !props.hasFirst && !props.hasSecond;
