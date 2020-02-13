@@ -504,6 +504,19 @@ export const COMPANIES = [
         careers: 'https://tractorzoom.com/about-us/careers/',
         lat: '41.573298',
         lng: '-93.709277'
+    },
+    {
+        name: 'DHI Group, Inc.',
+        category: 'Public',
+        description:
+            'A leading provider of career marketplaces for technology professionals across industries, in financial services and with active government security clearances.',
+        facebook: '',
+        instagram: 'lifeatdhi',
+        twitter: 'dhigroupinc',
+        linkedin: 'dhi-group-inc-',
+        careers: 'https://dhigroupinc.com/careers',
+        lat: '41.644264',
+        lng: '-93.783872'
     }
     //   {
     //     name: "",
