@@ -72,22 +72,22 @@ const Page = () => (
         <ProgrammerSvg src="/programmer.svg" />
         <p>
           {`
-                    When Lee Robinson set out to find a new job as a developer in the Des Moines area,
-                    he started to research companies and create pros/cons lists. During this process,
-                    he realized there wasn't a central hub listing out all the tech companies and jobs
-                    in the greater DSM area and saw others asking for the same thing.`}
+            When Lee Robinson set out to find a new job as a developer in the Des Moines area,
+            he started to research companies and create pros/cons lists. During this process,
+            he realized there wasn't a central hub listing out all the tech companies and jobs
+            in the greater DSM area and saw others asking for the same thing.`}
         </p>
         <p>
           {`
-                    He decided to create dsmtech.io - the easiest way to find tech companies and jobs in the Des Moines
-                    area. With humble beginnings, it started as a small list of 15 public, private, and startups in the area.
-                    Since then, it's tripled it's company list and helped people across the state of Iowa land tech jobs.`}
+            He decided to create dsmtech.io - the easiest way to find tech companies and jobs in the Des Moines
+            area. With humble beginnings, it started as a small list of 15 public, private, and startups in the area.
+            Since then, it's tripled it's company list and helped people across the state of Iowa land tech jobs.`}
         </p>
         <p>
           {`
-                    If you have any ideas on how to make this better, please let me know.
-                    Also, if you see any information that is incorrect or know of any companies 
-                    that are missing, `}
+            If you have any ideas on how to make this better, please let me know.
+            Also, if you see any information that is incorrect or know of any companies 
+            that are missing, `}
           <StyledLink href="https://github.com/leerob/dsmtech">
             {'create an issue or open a pull request here.'}
           </StyledLink>

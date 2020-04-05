@@ -15,7 +15,7 @@ const Footer = () => (
   <Text>
     {'Created by '}
     <a
-      href="https://www.leejamesrobinson.com/"
+      href="https://leerob.io"
       onClick={() =>
         gtag.event({
           action: 'Portfolio Click',

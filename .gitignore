@@ -5,3 +5,4 @@ dist
 node_modules
 *.log
 .next
+.now

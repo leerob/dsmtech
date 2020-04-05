@@ -12,7 +12,7 @@ import NavBar from '../components/NavBar';
 
 const createCard = (company) => (
   <Card key={company.name}>
-    <Card.Header>
+    <div>
       <Card.Image
         alt={formatName(company.name)}
         src={`/imgs/${formatFilePath(company.name)}.jpg`}
@@ -23,7 +23,7 @@ const createCard = (company) => (
       />
       <Card.Category>{company.category}</Card.Category>
       <Card.Title>{formatName(company.name)}</Card.Title>
-    </Card.Header>
+    </div>
     <Card.Text>{company.description}</Card.Text>
     <Card.Footer>
       <div>

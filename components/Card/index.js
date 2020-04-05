@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 import Category from './Category';
 import Footer from './Footer';
-import Header from './Header';
 import Image from './Image';
 import Logo from './Logo';
 import SocialLink from './SocialLink';
@@ -29,7 +28,6 @@ const Card = styled.div`
 
 Card.Category = Category;
 Card.Footer = Footer;
-Card.Header = Header;
 Card.Image = Image;
 Card.Logo = Logo;
 Card.SocialLink = SocialLink;
