@@ -1,54 +1,44 @@
 {
-    "name": "dsmtech",
-    "description": "The best tech companies and startups in the Greater Des Moines area.",
-    "version": "1.0.0",
-    "author": {
-        "name": "Lee Robinson",
-        "email": "lrobinson2011@gmail.com",
-        "url": "https://dsmtech.io"
-    },
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/leerob/dsmtech.git"
-    },
-    "engines": {
-        "node": "10.17.0",
-        "yarn": ">=1.10.0"
-    },
-    "scripts": {
-        "dev": "next",
-        "imageoptim": "imageoptim \"static/**/*.jpg\"",
-        "now-build": "next build && next export -o dist",
-        "prettier": "prettier --write \"**/*.{js,json,md,yml}\"",
-        "start": "next start"
-    },
-    "dependencies": {
-        "next": "9.1.7",
-        "react": "16.12.0",
-        "react-dom": "16.12.0",
-        "styled-components": "4.4.1"
-    },
-    "devDependencies": {
-        "babel-plugin-styled-components": "1.10.6",
-        "husky": "4.0.0",
-        "imageoptim-cli": "3.0.2",
-        "lint-staged": "9.5.0",
-        "prettier": "1.19.1"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.{js,json,md,yml}": [
-            "prettier --write",
-            "git add"
-        ],
-        "*.jpg": [
-            "imageoptim",
-            "git add"
-        ]
+  "name": "dsmtech",
+  "description": "The best tech companies and startups in the Greater Des Moines area.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Lee Robinson",
+    "email": "lrobinson2011@gmail.com",
+    "url": "https://dsmtech.io"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leerob/dsmtech.git"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "prettier": "prettier --write \"**/*.{js,json,md,yml}\"",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "9.1.7",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "styled-components": "4.4.1"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "1.10.6",
+    "husky": "4.0.0",
+    "lint-staged": "9.5.0",
+    "prettier": "1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,json,md,yml}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
 }
