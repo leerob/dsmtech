@@ -1,44 +1,23 @@
 {
   "name": "dsmtech",
-  "description": "The best tech companies and startups in the Greater Des Moines area.",
   "version": "1.0.0",
-  "author": {
-    "name": "Lee Robinson",
-    "email": "lrobinson2011@gmail.com",
-    "url": "https://dsmtech.io"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leerob/dsmtech.git"
-  },
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "prettier": "prettier --write \"**/*.{js,json,md,yml}\"",
     "start": "next start"
   },
   "dependencies": {
-    "next": "9.3.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "styled-components": "5.0.1"
+    "@tailwindcss/typography": "^0.2.0",
+    "autoprefixer": "^9.8.6",
+    "next": "latest",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^1.6.0"
   },
-  "devDependencies": {
-    "babel-plugin-styled-components": "1.10.7",
-    "husky": "4.2.3",
-    "lint-staged": "10.1.1",
-    "prettier": "2.0.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,md,yml}": [
-      "prettier --write",
-      "git add"
-    ]
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none"
   }
 }

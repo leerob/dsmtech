@@ -8,9 +8,7 @@ export const COMPANIES = [
     instagram: 'hyvee',
     twitter: 'hyvee',
     linkedin: 'hy-vee',
-    careers: 'https://innovate.hy-vee.com/',
-    lat: '41.657266',
-    lng: '-93.793181'
+    careers: 'https://innovate.hy-vee.com/'
   },
   {
     name: 'Dwolla',
@@ -21,9 +19,7 @@ export const COMPANIES = [
     instagram: 'dwolla',
     twitter: 'dwolla',
     linkedin: 'dwolla',
-    careers: 'https://www.dwolla.com/careers/',
-    lat: '41.585465',
-    lng: '-93.625151'
+    careers: 'https://www.dwolla.com/careers/'
   },
   {
     name: 'Workiva',
@@ -34,9 +30,7 @@ export const COMPANIES = [
     instagram: 'workivalife',
     twitter: 'workiva',
     linkedin: 'workiva',
-    careers: 'https://www.workiva.com/careers',
-    lat: '41.995880',
-    lng: '-93.638178'
+    careers: 'https://www.workiva.com/careers'
   },
   {
     name: 'Granular',
@@ -47,9 +41,7 @@ export const COMPANIES = [
     instagram: 'granular_ag',
     twitter: 'granularag',
     linkedin: 'granular',
-    careers: 'https://granular.ag/careers/',
-    lat: '41.671495',
-    lng: '-93.739462'
+    careers: 'https://granular.ag/careers/'
   },
   {
     name: 'Principal',
@@ -60,9 +52,7 @@ export const COMPANIES = [
     instagram: 'principal',
     twitter: 'principal',
     linkedin: 'principalfinancialgroup',
-    careers: 'https://www.principal.com/about-us/careers',
-    lat: '41.588806',
-    lng: '-93.627547'
+    careers: 'https://www.principal.com/about-us/careers'
   },
   {
     name: 'John Deere',
@@ -73,9 +63,7 @@ export const COMPANIES = [
     instagram: 'johndeere',
     twitter: 'johndeere',
     linkedin: 'john-deere',
-    careers: 'https://www.deere.com/en/our-company/john-deere-careers/',
-    lat: '41.674853',
-    lng: '-93.739731'
+    careers: 'https://www.deere.com/en/our-company/john-deere-careers/'
   },
   {
     name: 'Pillar',
@@ -86,9 +74,7 @@ export const COMPANIES = [
     instagram: 'pillartechnology',
     twitter: 'pillartech',
     linkedin: 'pillar-technology',
-    careers: 'https://pillartechnology.com/careers',
-    lat: '41.584348',
-    lng: '-93.635427'
+    careers: 'https://pillartechnology.com/careers'
   },
   {
     name: 'Denim',
@@ -99,9 +85,7 @@ export const COMPANIES = [
     instagram: 'denimhq',
     twitter: 'denim',
     linkedin: 'denim-labs',
-    careers: 'https://denimlabs.com/company/careers/',
-    lat: '41.586262',
-    lng: '-93.626680'
+    careers: 'https://denimlabs.com/company/careers/'
   },
   {
     name: 'Happy Medium',
@@ -112,9 +96,7 @@ export const COMPANIES = [
     instagram: 'itsahappymedium',
     twitter: 'itsahappymedium',
     linkedin: 'happy-medium',
-    careers: 'https://itsahappymedium.com/jobs/',
-    lat: '41.583387',
-    lng: '-93.621323'
+    careers: 'https://itsahappymedium.com/jobs/'
   },
   {
     name: 'Corteva',
@@ -125,9 +107,7 @@ export const COMPANIES = [
     instagram: 'corteva',
     twitter: 'corteva',
     linkedin: 'corteva',
-    careers: 'https://careers.corteva.com/',
-    lat: '41.671365',
-    lng: '-93.714661'
+    careers: 'https://careers.corteva.com/'
   },
   {
     name: 'Wells Fargo',
@@ -138,9 +118,7 @@ export const COMPANIES = [
     instagram: 'wellsfargo',
     twitter: 'wellsfargo',
     linkedin: 'wellsfargo',
-    careers: 'https://www.wellsfargo.com/about/careers/',
-    lat: '41.585085',
-    lng: '-93.627570'
+    careers: 'https://www.wellsfargo.com/about/careers/'
   },
   {
     name: 'Bunchball',
@@ -151,9 +129,7 @@ export const COMPANIES = [
     instagram: 'bunchball_',
     twitter: 'bunchball',
     linkedin: 'bunchball',
-    careers: 'https://www.bunchball.com/careers',
-    lat: '41.585715',
-    lng: '-93.612995'
+    careers: 'https://www.bunchball.com/careers'
   },
   {
     name: 'Shift',
@@ -164,9 +140,7 @@ export const COMPANIES = [
     instagram: 'shiftdsm',
     twitter: 'shiftdsm',
     linkedin: 'shift-interactive-llc',
-    careers: 'https://www.shiftdsm.com/careers/',
-    lat: '41.593308',
-    lng: '-93.760116'
+    careers: 'https://www.shiftdsm.com/careers/'
   },
   {
     name: 'Meredith',
@@ -177,9 +151,7 @@ export const COMPANIES = [
     instagram: 'MeredithCorporation',
     twitter: 'MeredithCorp',
     linkedin: 'meredith',
-    careers: 'https://www.meredith.com/careers',
-    lat: '41.583539',
-    lng: '-93.639287'
+    careers: 'https://www.meredith.com/careers'
   },
   {
     name: 'QCI',
@@ -190,9 +162,7 @@ export const COMPANIES = [
     instagram: 'TeamQCI',
     twitter: 'qci',
     linkedin: 'qci',
-    careers: 'http://qci.com/careers/',
-    lat: '41.593196',
-    lng: '-93.762950'
+    careers: 'http://qci.com/careers/'
   },
   {
     name: 'BirdDogHR',
@@ -203,9 +173,7 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'BirdDogHR',
     linkedin: 'BirdDogHR',
-    careers: 'https://birddoghr.com/company/careers',
-    lat: '41.642933',
-    lng: '-93.765199'
+    careers: 'https://birddoghr.com/company/careers'
   },
   {
     name: 'Gain Compliance',
@@ -216,9 +184,7 @@ export const COMPANIES = [
     instagram: 'gaincompliance',
     twitter: 'gaincompliance',
     linkedin: 'gain-compliance',
-    careers: 'https://gaincompliance.com/careers/',
-    lat: '41.588158',
-    lng: '-93.612322'
+    careers: 'https://gaincompliance.com/careers/'
   },
   {
     name: 'Limelight Health',
@@ -229,9 +195,7 @@ export const COMPANIES = [
     instagram: 'limelighthealth',
     twitter: 'limelighthealth',
     linkedin: 'limelight-health',
-    careers: 'https://limelighthealth.bamboohr.com/jobs/',
-    lat: '41.586746',
-    lng: '-93.624551'
+    careers: 'https://limelighthealth.bamboohr.com/jobs/'
   },
   {
     name: 'Vertex',
@@ -242,9 +206,7 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'Vertexvis',
     linkedin: 'vertex-software',
-    careers: 'https://www.vertexvis.com/careers/',
-    lat: '41.998619',
-    lng: '-93.638529'
+    careers: 'https://www.vertexvis.com/careers/'
   },
   {
     name: 'Source Allies',
@@ -255,9 +217,7 @@ export const COMPANIES = [
     instagram: 'sourceallies',
     twitter: 'sourceallies',
     linkedin: 'source-allies-inc.',
-    careers: 'https://www.sourceallies.com/careers/',
-    lat: '41.643678',
-    lng: '-93.765175'
+    careers: 'https://www.sourceallies.com/careers/'
   },
   {
     name: 'Rocket Referrals',
@@ -268,9 +228,7 @@ export const COMPANIES = [
     instagram: 'rocket__referrals',
     twitter: 'rocketreferrals',
     linkedin: 'rocket-referrals',
-    careers: 'https://rocketreferrals.workable.com/',
-    lat: '41.586846',
-    lng: '-93.624594'
+    careers: 'https://rocketreferrals.workable.com/'
   },
   {
     name: 'Lean Techniques',
@@ -281,9 +239,7 @@ export const COMPANIES = [
     instagram: 'leantechniques',
     twitter: 'leantechniques',
     linkedin: 'lean-techniques-inc.',
-    careers: 'https://leantechniques.com/careers/',
-    lat: '41.656396',
-    lng: '-93.745385'
+    careers: 'https://leantechniques.com/careers/'
   },
   {
     name: 'LenderClose',
@@ -294,9 +250,7 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'lenderclose',
     linkedin: 'lenderclose',
-    careers: 'https://www.lenderclose.com/careers',
-    lat: '41.593376',
-    lng: '-93.760095'
+    careers: 'https://www.lenderclose.com/careers'
   },
   {
     name: 'Smart Ag',
@@ -307,9 +261,7 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'smarter_ag',
     linkedin: 'smart-ag-llc',
-    careers: 'http://www.smart-ag.com/careers/',
-    lat: '41.997751',
-    lng: '-93.632454'
+    careers: 'http://www.smart-ag.com/careers/'
   },
   {
     name: 'Wellmark',
@@ -320,9 +272,7 @@ export const COMPANIES = [
     instagram: 'wellmarkbcbs',
     twitter: 'wellmarkbcbs',
     linkedin: 'wellmark',
-    careers: 'https://www.wellmark.com/careers',
-    lat: '41.586258',
-    lng: '-93.634036'
+    careers: 'https://www.wellmark.com/careers'
   },
   {
     name: 'Conga',
@@ -333,9 +283,7 @@ export const COMPANIES = [
     instagram: 'congateam',
     twitter: 'getconga',
     linkedin: 'conga',
-    careers: 'https://getconga.com/about/careers/',
-    lat: '41.589637',
-    lng: '-93.755333'
+    careers: 'https://getconga.com/about/careers/'
   },
   {
     name: 'WorkHound',
@@ -346,9 +294,7 @@ export const COMPANIES = [
     instagram: 'workhoundapp',
     twitter: 'workhoundapp',
     linkedin: 'workhound',
-    careers: 'https://angel.co/workhound/jobs',
-    lat: '41.586846',
-    lng: '-93.624551'
+    careers: 'https://angel.co/workhound/jobs'
   },
   {
     name: 'LightEdge',
@@ -359,9 +305,7 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'Lightedge',
     linkedin: 'lightedge-solutions',
-    careers: 'https://www.lightedge.com/about/careers/',
-    lat: '41.586268',
-    lng: '-93.629315'
+    careers: 'https://www.lightedge.com/about/careers/'
   },
   {
     name: 'IP Pathways',
@@ -372,9 +316,7 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'IPPathways',
     linkedin: 'ip-pathways',
-    careers: 'https://ippathways.com/about-us/careers/',
-    lat: '41.627622',
-    lng: '-93.767751'
+    careers: 'https://ippathways.com/about-us/careers/'
   },
   {
     name: 'ITA Group',
@@ -385,9 +327,7 @@ export const COMPANIES = [
     instagram: 'itagroup',
     twitter: 'ITAGroup',
     linkedin: 'itagroup',
-    careers: 'https://www.itagroup.com/careers',
-    lat: '41.593852',
-    lng: '-93.766842'
+    careers: 'https://www.itagroup.com/careers'
   },
   {
     name: 'Pitchly',
@@ -398,9 +338,7 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'pitchlyinc',
     linkedin: 'pitchly',
-    careers: 'https://pitchly.net',
-    lat: '41.589915',
-    lng: '-93.611034'
+    careers: 'https://pitchly.net'
   },
   {
     name: 'Kum and Go',
@@ -411,9 +349,7 @@ export const COMPANIES = [
     instagram: 'kumandgo',
     twitter: 'kumandgo',
     linkedin: 'kum-&-go',
-    careers: 'https://careers.kumandgo.com/corporate',
-    lat: '41.585575',
-    lng: '-93.636797'
+    careers: 'https://careers.kumandgo.com/corporate'
   },
   {
     name: 'Spinutech',
@@ -424,9 +360,7 @@ export const COMPANIES = [
     instagram: 'spinutech.inc',
     twitter: 'spinutech',
     linkedin: 'spinutech',
-    careers: 'https://www.spinutech.com/careers/',
-    lat: '41.608627',
-    lng: '-93.777831'
+    careers: 'https://www.spinutech.com/careers/'
   },
   {
     name: 'AgriSync',
@@ -437,9 +371,7 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'agrisync',
     linkedin: 'agrisync',
-    careers: 'https://www.agrisync.com/careers',
-    lat: '41.577822',
-    lng: '-93.866713'
+    careers: 'https://www.agrisync.com/careers'
   },
   {
     name: 'CDS Global',
@@ -450,9 +382,7 @@ export const COMPANIES = [
     instagram: 'cdsglobalinc',
     twitter: 'CDSGlobal',
     linkedin: 'cds-global',
-    careers: 'https://hearst.referrals.selectminds.com/cds-global',
-    lat: '41.565793',
-    lng: '-93.639104'
+    careers: 'https://hearst.referrals.selectminds.com/cds-global'
   },
   {
     name: 'Trility',
@@ -464,9 +394,7 @@ export const COMPANIES = [
     twitter: 'trilitygroup',
     linkedin: 'trility-consulting',
     careers:
-      'https://www.linkedin.com/jobs/search/?f_C=11030289&locationId=OTHERS.worldwide',
-    lat: '41.635639',
-    lng: '-93.703664'
+      'https://www.linkedin.com/jobs/search/?f_C=11030289&locationId=OTHERS.worldwide'
   },
   {
     name: 'Hatchlings',
@@ -477,9 +405,7 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'hatchlings',
     linkedin: '',
-    careers: 'https://careers.hatchlings.com/',
-    lat: '41.586770,',
-    lng: '-93.623944'
+    careers: 'https://careers.hatchlings.com/'
   },
   {
     name: 'Structurely',
@@ -490,9 +416,7 @@ export const COMPANIES = [
     instagram: 'structurely',
     twitter: 'structurelyre',
     linkedin: 'structurely',
-    careers: 'https://structurely.recruitee.com/',
-    lat: '42.049570',
-    lng: '-93.644796'
+    careers: 'https://structurely.recruitee.com/'
   },
   {
     name: 'Tractor Zoom',
@@ -503,9 +427,7 @@ export const COMPANIES = [
     instagram: 'tractorzoom',
     twitter: 'tractorzoom',
     linkedin: 'tractor-zoom',
-    careers: 'https://tractorzoom.com/about-us/careers/',
-    lat: '41.573298',
-    lng: '-93.709277'
+    careers: 'https://tractorzoom.com/about-us/careers/'
   },
   {
     name: 'DHI Group, Inc.',
@@ -516,9 +438,7 @@ export const COMPANIES = [
     instagram: 'lifeatdhi',
     twitter: 'dhigroupinc',
     linkedin: 'dhi-group-inc-',
-    careers: 'https://dhigroupinc.com/careers',
-    lat: '41.644264',
-    lng: '-93.783872'
+    careers: 'https://dhigroupinc.com/careers'
   }
   //   {
   //     name: "",
@@ -529,7 +449,5 @@ export const COMPANIES = [
   //     twitter: "",
   //     linkedin: "",
   //     careers: "",
-  //     lat: '',
-  //     lng: ''
   //   }
 ];
