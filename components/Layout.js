@@ -35,12 +35,13 @@ export default function Layout({ children, meta: pageMeta }) {
         <meta name="twitter:image" content={meta.cardImage} />
       </Head>
       <nav>
-        <ul className="flex justify-between items-center p-8 mx-2">
-          <li>
-            <Link href="/">
-              <a className="no-underline font-semibold">dsmtech</a>
-            </Link>
-          </li>
+        <a href="#skip" className="sr-only focus:not-sr-only">
+          Skip to content
+        </a>
+        <div className="flex justify-between items-center p-8 mx-2">
+          <Link href="/">
+            <a className="no-underline font-semibold">dsmtech</a>
+          </Link>
           <ul className="flex justify-between items-center space-x-4">
             <li>
               <Link href="/about">
@@ -60,9 +61,9 @@ export default function Layout({ children, meta: pageMeta }) {
               </a>
             </li>
           </ul>
-        </ul>
+        </div>
       </nav>
-      {children}
+      <div id="skip">{children}</div>
     </>
   );
 }

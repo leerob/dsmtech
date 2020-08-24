@@ -10,7 +10,7 @@ const SocialMedia = (company) => {
         target="_blank"
         rel="noopener noreferrer"
         href={`https://www.instagram.com/${company.instagram}`}
-        alt={company.name}
+        alt={`${company.name} instagram`}
       >
         <svg
           className="w-4 mr-2"
@@ -25,7 +25,7 @@ const SocialMedia = (company) => {
         target="_blank"
         rel="noopener noreferrer"
         href={`https://www.twitter.com/${company.twitter}`}
-        alt={company.name}
+        alt={`${company.name} twitter`}
       >
         <svg
           className="w-4 mr-2"
@@ -40,7 +40,7 @@ const SocialMedia = (company) => {
         target="_blank"
         rel="noopener noreferrer"
         href={`https://www.facebook.com/${company.facebook}`}
-        alt={company.name}
+        alt={`${company.name} facebook`}
       >
         <svg
           className="w-4 mr-2"
@@ -55,7 +55,7 @@ const SocialMedia = (company) => {
         target="_blank"
         rel="noopener noreferrer"
         href={`https://www.linkedin.com/company/${company.linkedin}`}
-        alt={company.name}
+        alt={`${company.name} linkedin`}
       >
         <svg
           className="w-4 mr-2"
@@ -133,16 +133,16 @@ export default function Home() {
               <table className="min-w-full divide-y divide-gray-200">
                 <thead>
                   <tr>
-                    <th className="px-6 py-3 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                    <th className="px-6 py-3 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
                       Name
                     </th>
-                    <th className="px-6 py-3 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                    <th className="px-6 py-3 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
                       Description
                     </th>
-                    <th className="px-6 py-3 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                    <th className="px-6 py-3 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
                       Type
                     </th>
-                    <th className="px-6 py-3 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                    <th className="px-6 py-3 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
                       Social
                     </th>
                     <th className="px-6 py-3 bg-gray-100"></th>
