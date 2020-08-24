@@ -40,7 +40,9 @@ export default function Layout({ children, meta: pageMeta }) {
         </a>
         <div className="flex justify-between items-center p-8 mx-2">
           <Link href="/">
-            <a className="no-underline font-semibold">dsmtech</a>
+            <a className="no-underline font-semibold">
+              <h1>dsmtech</h1>
+            </a>
           </Link>
           <ul className="flex justify-between items-center space-x-4">
             <li>

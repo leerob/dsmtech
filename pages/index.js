@@ -7,9 +7,15 @@ const SocialMedia = (company) => {
   return (
     <div className="flex flex-row">
       <a
+        className={!company.instagram ? 'opacity-50 cursor-not-allowed' : ''}
+        disabled={!company.instagram}
         target="_blank"
         rel="noopener noreferrer"
-        href={`https://www.instagram.com/${company.instagram}`}
+        href={
+          company.instagram
+            ? `https://www.instagram.com/${company.instagram}`
+            : null
+        }
       >
         <span className="sr-only">{`${company.name} instagram`}</span>
         <svg
@@ -22,9 +28,15 @@ const SocialMedia = (company) => {
         </svg>
       </a>
       <a
+        className={!company.twitter ? 'opacity-50 cursor-not-allowed' : ''}
+        disabled={!company.twitter}
         target="_blank"
         rel="noopener noreferrer"
-        href={`https://www.twitter.com/${company.twitter}`}
+        href={
+          company.twitter
+            ? `https://www.instagram.com/${company.twitter}`
+            : null
+        }
       >
         <span className="sr-only">{`${company.name} twitter`}</span>
         <svg
@@ -37,9 +49,15 @@ const SocialMedia = (company) => {
         </svg>
       </a>
       <a
+        className={!company.facebook ? 'opacity-50 cursor-not-allowed' : ''}
+        disabled={!company.facebook}
         target="_blank"
         rel="noopener noreferrer"
-        href={`https://www.facebook.com/${company.facebook}`}
+        href={
+          company.facebook
+            ? `https://www.instagram.com/${company.facebook}`
+            : null
+        }
       >
         <span className="sr-only">{`${company.name} facebook`}</span>
         <svg
@@ -52,9 +70,15 @@ const SocialMedia = (company) => {
         </svg>
       </a>
       <a
+        className={!company.linkedin ? 'opacity-50 cursor-not-allowed' : ''}
+        disabled={!company.linkedin}
         target="_blank"
         rel="noopener noreferrer"
-        href={`https://www.linkedin.com/company/${company.linkedin}`}
+        href={
+          company.linkedin
+            ? `https://www.instagram.com/${company.linkedin}`
+            : null
+        }
       >
         <span className="sr-only">{`${company.name} linkedin`}</span>
         <svg
