@@ -10,8 +10,8 @@ const SocialMedia = (company) => {
         target="_blank"
         rel="noopener noreferrer"
         href={`https://www.instagram.com/${company.instagram}`}
-        alt={`${company.name} instagram`}
       >
+        <span className="sr-only">{`${company.name} instagram`}</span>
         <svg
           className="w-4 mr-2"
           viewBox="0 0 24 24"
@@ -25,8 +25,8 @@ const SocialMedia = (company) => {
         target="_blank"
         rel="noopener noreferrer"
         href={`https://www.twitter.com/${company.twitter}`}
-        alt={`${company.name} twitter`}
       >
+        <span className="sr-only">{`${company.name} twitter`}</span>
         <svg
           className="w-4 mr-2"
           viewBox="0 0 24 24"
@@ -40,8 +40,8 @@ const SocialMedia = (company) => {
         target="_blank"
         rel="noopener noreferrer"
         href={`https://www.facebook.com/${company.facebook}`}
-        alt={`${company.name} facebook`}
       >
+        <span className="sr-only">{`${company.name} facebook`}</span>
         <svg
           className="w-4 mr-2"
           viewBox="0 0 24 24"
@@ -55,8 +55,8 @@ const SocialMedia = (company) => {
         target="_blank"
         rel="noopener noreferrer"
         href={`https://www.linkedin.com/company/${company.linkedin}`}
-        alt={`${company.name} linkedin`}
       >
+        <span className="sr-only">{`${company.name} linkedin`}</span>
         <svg
           className="w-4 mr-2"
           viewBox="0 0 24 24"
