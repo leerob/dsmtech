@@ -8,7 +8,8 @@ export const COMPANIES = [
     instagram: 'hyvee',
     twitter: 'hyvee',
     linkedin: 'hy-vee',
-    careers: 'https://innovate.hy-vee.com/'
+    careers: 'https://innovate.hy-vee.com/',
+    city: 'Grimes'
   },
   {
     name: 'Dwolla',
@@ -19,7 +20,8 @@ export const COMPANIES = [
     instagram: 'dwolla',
     twitter: 'dwolla',
     linkedin: 'dwolla',
-    careers: 'https://www.dwolla.com/careers/'
+    careers: 'https://www.dwolla.com/careers/',
+    city: 'Des Moines'
   },
   {
     name: 'Workiva',
@@ -30,7 +32,8 @@ export const COMPANIES = [
     instagram: 'workivalife',
     twitter: 'workiva',
     linkedin: 'workiva',
-    careers: 'https://www.workiva.com/careers'
+    careers: 'https://www.workiva.com/careers',
+    city: 'Ames'
   },
   {
     name: 'Granular',
@@ -41,7 +44,8 @@ export const COMPANIES = [
     instagram: 'granular_ag',
     twitter: 'granularag',
     linkedin: 'granular',
-    careers: 'https://granular.ag/careers/'
+    careers: 'https://granular.ag/careers/',
+    city: 'Johnson'
   },
   {
     name: 'Principal',
@@ -52,7 +56,8 @@ export const COMPANIES = [
     instagram: 'principal',
     twitter: 'principal',
     linkedin: 'principalfinancialgroup',
-    careers: 'https://www.principal.com/about-us/careers'
+    careers: 'https://www.principal.com/about-us/careers',
+    city: 'Des Moines'
   },
   {
     name: 'John Deere',
@@ -63,7 +68,8 @@ export const COMPANIES = [
     instagram: 'johndeere',
     twitter: 'johndeere',
     linkedin: 'john-deere',
-    careers: 'https://www.deere.com/en/our-company/john-deere-careers/'
+    careers: 'https://www.deere.com/en/our-company/john-deere-careers/',
+    city: 'Urbandale'
   },
   {
     name: 'Pillar',
@@ -74,7 +80,8 @@ export const COMPANIES = [
     instagram: 'pillartechnology',
     twitter: 'pillartech',
     linkedin: 'pillar-technology',
-    careers: 'https://pillartechnology.com/careers'
+    careers: 'https://pillartechnology.com/careers',
+    city: 'Des Moines'
   },
   {
     name: 'Denim',
@@ -85,7 +92,8 @@ export const COMPANIES = [
     instagram: 'denimhq',
     twitter: 'denim',
     linkedin: 'denim-labs',
-    careers: 'https://denimlabs.com/company/careers/'
+    careers: 'https://denimlabs.com/company/careers/',
+    city: 'Des Moines'
   },
   {
     name: 'Happy Medium',
@@ -96,7 +104,8 @@ export const COMPANIES = [
     instagram: 'itsahappymedium',
     twitter: 'itsahappymedium',
     linkedin: 'happy-medium',
-    careers: 'https://itsahappymedium.com/jobs/'
+    careers: 'https://itsahappymedium.com/jobs/',
+    city: 'Des Moines'
   },
   {
     name: 'Corteva',
@@ -107,7 +116,8 @@ export const COMPANIES = [
     instagram: 'corteva',
     twitter: 'corteva',
     linkedin: 'corteva',
-    careers: 'https://careers.corteva.com/'
+    careers: 'https://careers.corteva.com/',
+    city: 'Johnson'
   },
   {
     name: 'Wells Fargo',
@@ -118,7 +128,8 @@ export const COMPANIES = [
     instagram: 'wellsfargo',
     twitter: 'wellsfargo',
     linkedin: 'wellsfargo',
-    careers: 'https://www.wellsfargo.com/about/careers/'
+    careers: 'https://www.wellsfargo.com/about/careers/',
+    city: 'Des Moines'
   },
   {
     name: 'Bunchball',
@@ -129,7 +140,8 @@ export const COMPANIES = [
     instagram: 'bunchball_',
     twitter: 'bunchball',
     linkedin: 'bunchball',
-    careers: 'https://www.bunchball.com/careers'
+    careers: 'https://www.bunchball.com/careers',
+    city: 'Des Moines'
   },
   {
     name: 'Shift',
@@ -140,7 +152,8 @@ export const COMPANIES = [
     instagram: 'shiftdsm',
     twitter: 'shiftdsm',
     linkedin: 'shift-interactive-llc',
-    careers: 'https://www.shiftdsm.com/careers/'
+    careers: 'https://www.shiftdsm.com/careers/',
+    city: 'West Des Moines'
   },
   {
     name: 'Meredith',
@@ -151,7 +164,8 @@ export const COMPANIES = [
     instagram: 'MeredithCorporation',
     twitter: 'MeredithCorp',
     linkedin: 'meredith',
-    careers: 'https://www.meredith.com/careers'
+    careers: 'https://www.meredith.com/careers',
+    city: 'Des Moines'
   },
   {
     name: 'QCI',
@@ -162,7 +176,8 @@ export const COMPANIES = [
     instagram: 'TeamQCI',
     twitter: 'qci',
     linkedin: 'qci',
-    careers: 'http://qci.com/careers/'
+    careers: 'http://qci.com/careers/',
+    city: 'West Des Moines'
   },
   {
     name: 'BirdDogHR',
@@ -173,7 +188,8 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'BirdDogHR',
     linkedin: 'BirdDogHR',
-    careers: 'https://birddoghr.com/company/careers'
+    careers: 'https://birddoghr.com/company/careers',
+    city: 'Urbandale'
   },
   {
     name: 'Gain Compliance',
@@ -184,7 +200,8 @@ export const COMPANIES = [
     instagram: 'gaincompliance',
     twitter: 'gaincompliance',
     linkedin: 'gain-compliance',
-    careers: 'https://gaincompliance.com/careers/'
+    careers: 'https://gaincompliance.com/careers/',
+    city: 'Des Moines'
   },
   {
     name: 'Limelight Health',
@@ -195,7 +212,8 @@ export const COMPANIES = [
     instagram: 'limelighthealth',
     twitter: 'limelighthealth',
     linkedin: 'limelight-health',
-    careers: 'https://limelighthealth.bamboohr.com/jobs/'
+    careers: 'https://limelighthealth.bamboohr.com/jobs/',
+    city: 'Des Moines'
   },
   {
     name: 'Vertex',
@@ -206,7 +224,8 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'Vertexvis',
     linkedin: 'vertex-software',
-    careers: 'https://www.vertexvis.com/careers/'
+    careers: 'https://www.vertexvis.com/careers/',
+    city: 'Ames'
   },
   {
     name: 'Source Allies',
@@ -217,7 +236,8 @@ export const COMPANIES = [
     instagram: 'sourceallies',
     twitter: 'sourceallies',
     linkedin: 'source-allies-inc.',
-    careers: 'https://www.sourceallies.com/careers/'
+    careers: 'https://www.sourceallies.com/careers/',
+    city: 'Urbandale'
   },
   {
     name: 'Rocket Referrals',
@@ -228,7 +248,8 @@ export const COMPANIES = [
     instagram: 'rocket__referrals',
     twitter: 'rocketreferrals',
     linkedin: 'rocket-referrals',
-    careers: 'https://rocketreferrals.workable.com/'
+    careers: 'https://rocketreferrals.workable.com/',
+    city: 'Des Moines'
   },
   {
     name: 'Lean Techniques',
@@ -239,7 +260,8 @@ export const COMPANIES = [
     instagram: 'leantechniques',
     twitter: 'leantechniques',
     linkedin: 'lean-techniques-inc.',
-    careers: 'https://leantechniques.com/careers/'
+    careers: 'https://leantechniques.com/careers/',
+    city: 'Johnson'
   },
   {
     name: 'LenderClose',
@@ -250,7 +272,8 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'lenderclose',
     linkedin: 'lenderclose',
-    careers: 'https://www.lenderclose.com/careers'
+    careers: 'https://www.lenderclose.com/careers',
+    city: 'West Des Moines'
   },
   {
     name: 'Smart Ag',
@@ -261,7 +284,8 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'smarter_ag',
     linkedin: 'smart-ag-llc',
-    careers: 'http://www.smart-ag.com/careers/'
+    careers: 'http://www.smart-ag.com/careers/',
+    city: 'Ames'
   },
   {
     name: 'Wellmark',
@@ -272,7 +296,8 @@ export const COMPANIES = [
     instagram: 'wellmarkbcbs',
     twitter: 'wellmarkbcbs',
     linkedin: 'wellmark',
-    careers: 'https://www.wellmark.com/careers'
+    careers: 'https://www.wellmark.com/careers',
+    city: 'Des Moines'
   },
   {
     name: 'Conga',
@@ -283,7 +308,8 @@ export const COMPANIES = [
     instagram: 'congateam',
     twitter: 'getconga',
     linkedin: 'conga',
-    careers: 'https://getconga.com/about/careers/'
+    careers: 'https://getconga.com/about/careers/',
+    city: 'West Des Moines'
   },
   {
     name: 'WorkHound',
@@ -294,7 +320,8 @@ export const COMPANIES = [
     instagram: 'workhoundapp',
     twitter: 'workhoundapp',
     linkedin: 'workhound',
-    careers: 'https://angel.co/workhound/jobs'
+    careers: 'https://angel.co/workhound/jobs',
+    city: 'Des Moines'
   },
   {
     name: 'LightEdge',
@@ -305,7 +332,8 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'Lightedge',
     linkedin: 'lightedge-solutions',
-    careers: 'https://www.lightedge.com/about/careers/'
+    careers: 'https://www.lightedge.com/about/careers/',
+    city: 'Des Moines'
   },
   {
     name: 'IP Pathways',
@@ -316,7 +344,8 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'IPPathways',
     linkedin: 'ip-pathways',
-    careers: 'https://ippathways.com/about-us/careers/'
+    careers: 'https://ippathways.com/about-us/careers/',
+    city: 'Urbandale'
   },
   {
     name: 'ITA Group',
@@ -327,7 +356,8 @@ export const COMPANIES = [
     instagram: 'itagroup',
     twitter: 'ITAGroup',
     linkedin: 'itagroup',
-    careers: 'https://www.itagroup.com/careers'
+    careers: 'https://www.itagroup.com/careers',
+    city: 'West Des Moines'
   },
   {
     name: 'Pitchly',
@@ -338,7 +368,8 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'pitchlyinc',
     linkedin: 'pitchly',
-    careers: 'https://pitchly.net'
+    careers: 'https://pitchly.net',
+    city: 'Des Moines'
   },
   {
     name: 'Kum and Go',
@@ -349,7 +380,8 @@ export const COMPANIES = [
     instagram: 'kumandgo',
     twitter: 'kumandgo',
     linkedin: 'kum-&-go',
-    careers: 'https://careers.kumandgo.com/corporate'
+    careers: 'https://careers.kumandgo.com/corporate',
+    city: 'Des Moines'
   },
   {
     name: 'Spinutech',
@@ -360,7 +392,8 @@ export const COMPANIES = [
     instagram: 'spinutech.inc',
     twitter: 'spinutech',
     linkedin: 'spinutech',
-    careers: 'https://www.spinutech.com/careers/'
+    careers: 'https://www.spinutech.com/careers/',
+    city: 'Clive'
   },
   {
     name: 'AgriSync',
@@ -371,7 +404,8 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'agrisync',
     linkedin: 'agrisync',
-    careers: 'https://www.agrisync.com/careers'
+    careers: 'https://www.agrisync.com/careers',
+    city: 'Waukee'
   },
   {
     name: 'CDS Global',
@@ -382,7 +416,8 @@ export const COMPANIES = [
     instagram: 'cdsglobalinc',
     twitter: 'CDSGlobal',
     linkedin: 'cds-global',
-    careers: 'https://hearst.referrals.selectminds.com/cds-global'
+    careers: 'https://hearst.referrals.selectminds.com/cds-global',
+    city: 'Des Moines'
   },
   {
     name: 'Trility',
@@ -394,7 +429,8 @@ export const COMPANIES = [
     twitter: 'trilitygroup',
     linkedin: 'trility-consulting',
     careers:
-      'https://www.linkedin.com/jobs/search/?f_C=11030289&locationId=OTHERS.worldwide'
+      'https://www.linkedin.com/jobs/search/?f_C=11030289&locationId=OTHERS.worldwide',
+    city: 'Clive'
   },
   {
     name: 'Hatchlings',
@@ -405,7 +441,8 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'hatchlings',
     linkedin: '',
-    careers: 'https://careers.hatchlings.com/'
+    careers: 'https://careers.hatchlings.com/',
+    city: 'Des Moines'
   },
   {
     name: 'Structurely',
@@ -416,7 +453,8 @@ export const COMPANIES = [
     instagram: 'structurely',
     twitter: 'structurelyre',
     linkedin: 'structurely',
-    careers: 'https://structurely.recruitee.com/'
+    careers: 'https://structurely.recruitee.com/',
+    city: 'Ames'
   },
   {
     name: 'Tractor Zoom',
@@ -427,7 +465,8 @@ export const COMPANIES = [
     instagram: 'tractorzoom',
     twitter: 'tractorzoom',
     linkedin: 'tractor-zoom',
-    careers: 'https://tractorzoom.com/about-us/careers/'
+    careers: 'https://tractorzoom.com/about-us/careers/',
+    city: 'Urbandale'
   },
   {
     name: 'DHI Group, Inc.',
@@ -438,16 +477,7 @@ export const COMPANIES = [
     instagram: 'lifeatdhi',
     twitter: 'dhigroupinc',
     linkedin: 'dhi-group-inc-',
-    careers: 'https://dhigroupinc.com/careers'
+    careers: 'https://dhigroupinc.com/careers',
+    city: 'Urbandale'
   }
-  //   {
-  //     name: "",
-  //     category: "",
-  //     description: "",
-  //     facebook: "",
-  //     instagram: "",
-  //     twitter: "",
-  //     linkedin: "",
-  //     careers: "",
-  //   }
 ];

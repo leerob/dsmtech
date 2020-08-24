@@ -95,7 +95,9 @@ const TableRow = (company) => {
             <div className="text-sm leading-5 font-medium text-gray-900">
               {company.name}
             </div>
-            <div className="text-sm leading-5 text-gray-500">Grimes, IA</div>
+            <div className="text-sm leading-5 text-gray-500">
+              {company.city}, IA
+            </div>
           </div>
         </div>
       </td>
