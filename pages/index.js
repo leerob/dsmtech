@@ -33,9 +33,7 @@ const SocialMedia = (company) => {
         target="_blank"
         rel="noopener noreferrer"
         href={
-          company.twitter
-            ? `https://www.instagram.com/${company.twitter}`
-            : null
+          company.twitter ? `https://www.twitter.com/${company.twitter}` : null
         }
       >
         <span className="sr-only">{`${company.name} twitter`}</span>
@@ -55,7 +53,7 @@ const SocialMedia = (company) => {
         rel="noopener noreferrer"
         href={
           company.facebook
-            ? `https://www.instagram.com/${company.facebook}`
+            ? `https://www.facebook.com/${company.facebook}`
             : null
         }
       >
@@ -76,7 +74,7 @@ const SocialMedia = (company) => {
         rel="noopener noreferrer"
         href={
           company.linkedin
-            ? `https://www.instagram.com/${company.linkedin}`
+            ? `https://www.linkedin.com/company/${company.linkedin}`
             : null
         }
       >
