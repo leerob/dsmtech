@@ -299,19 +299,6 @@ export const COMPANIES = [
     lng: '-93.760095'
   },
   {
-    name: 'Smart Ag',
-    category: 'Startup',
-    description:
-      'Our vision at Smart Ag is to enable farmers to perfect their operation of farm equipment we believe it all starts by unlocking the potential of farmer not the acre, not the seed, and not the plant.',
-    facebook: 'SmartAgEquipment',
-    instagram: '',
-    twitter: 'smarter_ag',
-    linkedin: 'smart-ag-llc',
-    careers: 'http://www.smart-ag.com/careers/',
-    lat: '41.997751',
-    lng: '-93.632454'
-  },
-  {
     name: 'Wellmark',
     category: 'Private',
     description:
