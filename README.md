@@ -2,9 +2,8 @@
 
 > The best tech companies and startups in the Greater Des Moines area.
 
-Built using:
+### Built Using
 
 - [Next.js](https://nextjs.org/)
-- [Now](https://zeit.co/now)
-- [Prettier](https://prettier.io/)
-- [styled-components](https://www.styled-components.com/)
+- [Tailwind](https://tailwindcss.com)
+- [Vercel](https://vercel.com)
