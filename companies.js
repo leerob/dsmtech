@@ -467,5 +467,17 @@ export const COMPANIES = [
     linkedin: 'dhi-group-inc-',
     careers: 'https://dhigroupinc.com/careers',
     city: 'Urbandale'
+  },
+  {
+    name: 'ZebraHost',
+    category: 'Private',
+    description:
+      'ZebraHost is a cloud provider offering website hosting, VPS, and dedicated cloud solutions with exceptional 24/7 support.',
+    facebook: 'ZebraHost1',
+    instagram: '',
+    twitter: 'ZebraHost',
+    linkedin: 'ZebraHost',
+    careers: 'https://zebrahost.com/contact.html',
+    city: 'Des Moines'
   }
 ];
