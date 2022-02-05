@@ -124,7 +124,7 @@ const TableRow = (company) => {
         </div>
       </td>
       <td className="px-6 py-4">
-        <div className="text-sm leading-5 text-gray-900 min-w-md">
+        <div className="text-sm leading-5 text-gray-900 min-w-[400px]">
           {company.description}
         </div>
       </td>
