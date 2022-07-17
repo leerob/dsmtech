@@ -173,7 +173,11 @@ export default function Home() {
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
-                  {COMPANIES.map((company) => (
+                  {COMPANIES.sort((a, b) => {
+                    if (a.name < b.name) {
+                      return -1;
+                    }
+                  }).map((company) => (
                     <TableRow key={company.name} {...company} />
                   ))}
                 </tbody>
