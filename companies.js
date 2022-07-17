@@ -479,5 +479,17 @@ export const COMPANIES = [
     linkedin: 'ZebraHost',
     careers: 'https://zebrahost.com/contact.html',
     city: 'Des Moines'
+  },
+  {
+    name: 'PeachPay',
+    category: 'Startup',
+    description:
+      'PeachPay provides ecommerce merchants with a sleek, modern checkout that converts shoppers. Merchants can also manage their payment methods, view analytics, and more.',
+    facebook: 'peachpayinc',
+    instagram: 'peachpaycheckout',
+    twitter: 'PeachPayInc',
+    linkedin: 'peachpay',
+    careers: 'https://peachpay.app/jobs',
+    city: 'Ames'
   }
 ];
