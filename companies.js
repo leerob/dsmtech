@@ -84,15 +84,15 @@ export const COMPANIES = [
     city: 'Des Moines'
   },
   {
-    name: 'Denim',
+    name: 'Denim Social',
     category: 'Startup',
     description:
       'Denim’s patent-pending, data-driven platform saves time and money by enabling marketing teams to create and manage micro-targeted mobile and social media ad campaigns on behalf of local representatives.',
-    facebook: 'denimlabsinc',
-    instagram: 'denimhq',
-    twitter: 'denim',
-    linkedin: 'denim-labs',
-    careers: 'https://denimlabs.com/company/careers/',
+    facebook: 'denimsocial',
+    instagram: 'denim_social',
+    twitter: 'denimsocial',
+    linkedin: 'denimsocial',
+    careers: 'https://www.denimsocial.com/careers',
     city: 'Des Moines'
   },
   {
