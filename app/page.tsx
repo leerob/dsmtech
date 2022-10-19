@@ -7,7 +7,6 @@ const SocialMedia = (company) => {
     <div className="flex flex-row">
       <a
         className={!company.instagram ? 'opacity-50 cursor-not-allowed' : ''}
-        disabled={!company.instagram}
         target="_blank"
         rel="noopener noreferrer"
         href={
@@ -28,7 +27,6 @@ const SocialMedia = (company) => {
       </a>
       <a
         className={!company.twitter ? 'opacity-50 cursor-not-allowed' : ''}
-        disabled={!company.twitter}
         target="_blank"
         rel="noopener noreferrer"
         href={
@@ -47,7 +45,6 @@ const SocialMedia = (company) => {
       </a>
       <a
         className={!company.facebook ? 'opacity-50 cursor-not-allowed' : ''}
-        disabled={!company.facebook}
         target="_blank"
         rel="noopener noreferrer"
         href={
@@ -68,7 +65,6 @@ const SocialMedia = (company) => {
       </a>
       <a
         className={!company.linkedin ? 'opacity-50 cursor-not-allowed' : ''}
-        disabled={!company.linkedin}
         target="_blank"
         rel="noopener noreferrer"
         href={
