@@ -484,12 +484,12 @@ export const COMPANIES = [
     name: 'PeachPay',
     category: 'Startup',
     description:
-      'PeachPay provides ecommerce merchants with a sleek, modern checkout that converts shoppers. Merchants can also manage their payment methods, view analytics, and more.',
-    facebook: 'peachpayinc',
-    instagram: 'peachpaycheckout',
-    twitter: 'PeachPayInc',
+      'PeachPay gives online merchants a sleek, modern checkout that converts shoppers. Merchants can also manage payment methods, view analytics, and more.',
+    facebook: 'peachpayhq',
+    instagram: 'peachpayhq',
+    twitter: 'peachpayhq',
     linkedin: 'peachpay',
-    careers: 'https://peachpay.app/jobs',
+    careers: 'https://apply.workable.com/peachpay/',
     city: 'Ames'
   }
 ];
