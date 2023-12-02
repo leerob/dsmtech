@@ -1,23 +1,25 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "next": "12.3.2-canary.30",
-    "react": "0.0.0-experimental-9cdf8a99e-20221018",
-    "react-dom": "0.0.0-experimental-9cdf8a99e-20221018"
+    "@vercel/analytics": "^1.1.1",
+    "geist": "^1.2.0",
+    "next": "14.0.4-canary.35",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.7",
-    "@types/node": "18.11.2",
-    "@types/react": "18.0.21",
-    "autoprefixer": "^10.4.12",
-    "postcss": "^8.4.18",
-    "tailwindcss": "^3.1.8",
-    "typescript": "4.8.4"
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/node": "20.10.2",
+    "@types/react": "18.2.41",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.5",
+    "typescript": "5.3.2"
   },
   "prettier": {
     "arrowParens": "always",

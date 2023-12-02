@@ -1,8 +1,8 @@
-import { COMPANIES } from '../companies';
+import { COMPANIES } from './companies';
 
-const formatFilePath = (name) => name.replace(/ /g, '_').toLowerCase();
+let formatFilePath = (name) => name.replace(/ /g, '_').toLowerCase();
 
-const SocialMedia = (company) => {
+let SocialMedia = (company) => {
   return (
     <div className="flex flex-row">
       <a
@@ -87,7 +87,7 @@ const SocialMedia = (company) => {
   );
 };
 
-const TableRow = (company) => {
+let TableRow = (company) => {
   let categoryClassName = 'bg-green-100 text-green-800';
 
   if (company.category === 'Public') {
