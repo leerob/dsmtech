@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+// geist font weight fix
 html, body {
   font-synthesis-weight: none;
 }
