@@ -1,6 +1,5 @@
 import './global.css';
 import Link from 'next/link';
-import { GeistSans } from 'geist/font/sans';
 import { Analytics } from '@vercel/analytics/react';
 
 let title =
@@ -40,7 +39,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={GeistSans.variable}>
+    <html lang="en">
       <body className="bg-gray-100">
         <nav>
           <a href="#skip" className="sr-only focus:not-sr-only">

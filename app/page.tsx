@@ -103,7 +103,7 @@ let TableRow = (company) => {
           <div className="flex-shrink-0 h-10 w-10">
             <img
               loading="lazy"
-              className="h-10 w-10 rounded-full"
+              className="h-10 w-10 max-w-10 rounded-full"
               src={`/logos/${formatFilePath(company.name)}.jpg`}
               alt={company.name}
             />
@@ -133,7 +133,7 @@ let TableRow = (company) => {
       <td className="px-6 py-4 whitespace-no-wrap">
         <SocialMedia {...company} />
       </td>
-      <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
+      <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium min-w-[120px]">
         <a href={company.careers} className="text-blue-600 hover:text-blue-900">
           View Jobs
         </a>
