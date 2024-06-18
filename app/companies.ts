@@ -384,18 +384,6 @@ export const COMPANIES = [
     city: 'Clive'
   },
   {
-    name: 'AgriSync',
-    category: 'Startup',
-    description:
-      'AgriSync is an agriculture software company helping ag experts deliver better service at a fraction of the cost to maximize uptime for farmers.',
-    facebook: 'agrisync',
-    instagram: '',
-    twitter: 'agrisync',
-    linkedin: 'agrisync',
-    careers: 'https://www.agrisync.com/careers',
-    city: 'Waukee'
-  },
-  {
     name: 'CDS Global',
     category: 'Private',
     description:
