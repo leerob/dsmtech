@@ -132,18 +132,6 @@ export const COMPANIES = [
     city: 'Des Moines'
   },
   {
-    name: 'Bunchball',
-    category: 'Startup',
-    description:
-      'Bunchball is the leader and innovator of engagement technology powered by gamification. More than 400 enterprise customers rely upon Bunchball for the company’s expertise, innovations and proprietary analytics that deliver proven business results.',
-    facebook: 'bunchball',
-    instagram: 'bunchball_',
-    twitter: 'bunchball',
-    linkedin: 'bunchball',
-    careers: 'https://www.bunchball.com/careers',
-    city: 'Des Moines'
-  },
-  {
     name: 'Shift',
     category: 'Private',
     description:
