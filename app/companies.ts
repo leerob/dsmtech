@@ -213,7 +213,7 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'Vertexvis',
     linkedin: 'vertex-software',
-    careers: 'https://www.vertexvis.com/careers/',
+    careers: 'https://vertex3d.com/company/careers',
     city: 'Ames'
   },
   {
@@ -345,7 +345,7 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'pitchlyinc',
     linkedin: 'pitchly',
-    careers: 'https://pitchly.net',
+    careers: 'https://www.pitchly.com/careers-at-pitchly',
     city: 'Des Moines'
   },
   {
@@ -369,7 +369,7 @@ export const COMPANIES = [
     instagram: 'spinutech.inc',
     twitter: 'spinutech',
     linkedin: 'spinutech',
-    careers: 'https://www.spinutech.com/careers/',
+    careers: 'https://www.spinutech.com/about/careers/',
     city: 'Clive'
   },
   {
@@ -420,7 +420,7 @@ export const COMPANIES = [
     instagram: 'structurely',
     twitter: 'structurelyre',
     linkedin: 'structurely',
-    careers: 'https://structurely.recruitee.com/',
+    careers: 'https://www.structurely.com/',
     city: 'Ames'
   },
   {
