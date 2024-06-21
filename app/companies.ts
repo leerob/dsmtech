@@ -44,7 +44,8 @@ export const COMPANIES = [
     instagram: 'granular_ag',
     twitter: 'granularag',
     linkedin: 'granular',
-    careers: 'https://granular.ag/careers/',
+    careers: '',
+    // link is no longer valid
     city: 'Johnson'
   },
   {
@@ -132,18 +133,6 @@ export const COMPANIES = [
     city: 'Des Moines'
   },
   {
-    name: 'Bunchball',
-    category: 'Startup',
-    description:
-      'Bunchball is the leader and innovator of engagement technology powered by gamification. More than 400 enterprise customers rely upon Bunchball for the company’s expertise, innovations and proprietary analytics that deliver proven business results.',
-    facebook: 'bunchball',
-    instagram: 'bunchball_',
-    twitter: 'bunchball',
-    linkedin: 'bunchball',
-    careers: 'https://www.bunchball.com/careers',
-    city: 'Des Moines'
-  },
-  {
     name: 'Shift',
     category: 'Private',
     description:
@@ -164,7 +153,7 @@ export const COMPANIES = [
     instagram: 'MeredithCorporation',
     twitter: 'MeredithCorp',
     linkedin: 'meredith',
-    careers: 'https://www.meredith.com/careers',
+    careers: 'https://www.dotdashmeredith.com/careers', //updated link
     city: 'Des Moines'
   },
   {
@@ -212,7 +201,7 @@ export const COMPANIES = [
     instagram: 'limelighthealth',
     twitter: 'limelighthealth',
     linkedin: 'limelight-health',
-    careers: 'https://limelighthealth.bamboohr.com/jobs/',
+    careers: 'https://www.bamboohr.com/careers/', //updated link
     city: 'Des Moines'
   },
   {
@@ -224,7 +213,7 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'Vertexvis',
     linkedin: 'vertex-software',
-    careers: 'https://www.vertexvis.com/careers/',
+    careers: 'https://vertex3d.com/company/careers',
     city: 'Ames'
   },
   {
@@ -264,16 +253,16 @@ export const COMPANIES = [
     city: 'Johnson'
   },
   {
-    name: 'LenderClose',
+    name: 'Coviance',
     category: 'Startup',
     description:
       'A powerful web-based platform built for Refinance and Home Equity lenders. A single solution which aggregates industry vendors.',
-    facebook: 'lenderclose',
+    facebook: 'Coviance',
     instagram: '',
-    twitter: 'lenderclose',
-    linkedin: 'lenderclose',
-    careers: 'https://www.lenderclose.com/careers',
-    city: 'West Des Moines'
+    twitter: 'Coviance',
+    linkedin: 'Coviance',
+    careers: 'https://www.coviance.com/company/careers',
+    city: 'West Des Moines' //rebranding
   },
   {
     name: 'Wellmark',
@@ -296,7 +285,7 @@ export const COMPANIES = [
     instagram: 'congateam',
     twitter: 'getconga',
     linkedin: 'conga',
-    careers: 'https://getconga.com/about/careers/',
+    careers: 'https://conga.com/careers',
     city: 'West Des Moines'
   },
   {
@@ -356,7 +345,7 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'pitchlyinc',
     linkedin: 'pitchly',
-    careers: 'https://pitchly.net',
+    careers: 'https://www.pitchly.com/careers-at-pitchly',
     city: 'Des Moines'
   },
   {
@@ -368,7 +357,7 @@ export const COMPANIES = [
     instagram: 'kumandgo',
     twitter: 'kumandgo',
     linkedin: 'kum-&-go',
-    careers: 'https://careers.kumandgo.com/corporate',
+    careers: 'https://careers.maverik.com/', //new link
     city: 'Des Moines'
   },
   {
@@ -380,20 +369,8 @@ export const COMPANIES = [
     instagram: 'spinutech.inc',
     twitter: 'spinutech',
     linkedin: 'spinutech',
-    careers: 'https://www.spinutech.com/careers/',
+    careers: 'https://www.spinutech.com/about/careers/',
     city: 'Clive'
-  },
-  {
-    name: 'AgriSync',
-    category: 'Startup',
-    description:
-      'AgriSync is an agriculture software company helping ag experts deliver better service at a fraction of the cost to maximize uptime for farmers.',
-    facebook: 'agrisync',
-    instagram: '',
-    twitter: 'agrisync',
-    linkedin: 'agrisync',
-    careers: 'https://www.agrisync.com/careers',
-    city: 'Waukee'
   },
   {
     name: 'CDS Global',
@@ -404,7 +381,8 @@ export const COMPANIES = [
     instagram: 'cdsglobalinc',
     twitter: 'CDSGlobal',
     linkedin: 'cds-global',
-    careers: 'https://hearst.referrals.selectminds.com/cds-global',
+    careers:
+      'https://eevd.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CDS-Global',
     city: 'Des Moines'
   },
   {
@@ -429,7 +407,8 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'hatchlings',
     linkedin: '',
-    careers: 'https://careers.hatchlings.com/',
+    careers: '',
+    // link is no longer exists
     city: 'Des Moines'
   },
   {
@@ -441,7 +420,7 @@ export const COMPANIES = [
     instagram: 'structurely',
     twitter: 'structurelyre',
     linkedin: 'structurely',
-    careers: 'https://structurely.recruitee.com/',
+    careers: 'https://www.structurely.com/',
     city: 'Ames'
   },
   {
