@@ -250,7 +250,7 @@ export const COMPANIES = [
     twitter: 'leantechniques',
     linkedin: 'lean-techniques-inc.',
     careers: 'https://leantechniques.com/careers/',
-    city: 'Johnson'
+    city: 'Johnston'
   },
   {
     name: 'Coviance',
