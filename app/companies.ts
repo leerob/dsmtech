@@ -46,7 +46,7 @@ export const COMPANIES = [
     linkedin: 'granular',
     careers: '',
     // link is no longer valid
-    city: 'Johnson'
+    city: 'Johnston'
   },
   {
     name: 'Principal',
@@ -118,7 +118,7 @@ export const COMPANIES = [
     twitter: 'corteva',
     linkedin: 'corteva',
     careers: 'https://careers.corteva.com/',
-    city: 'Johnson'
+    city: 'Johnston'
   },
   {
     name: 'Wells Fargo',
@@ -250,7 +250,7 @@ export const COMPANIES = [
     twitter: 'leantechniques',
     linkedin: 'lean-techniques-inc.',
     careers: 'https://leantechniques.com/careers/',
-    city: 'Johnson'
+    city: 'Johnston'
   },
   {
     name: 'Coviance',
