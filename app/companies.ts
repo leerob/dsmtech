@@ -169,6 +169,17 @@ export const COMPANIES = [
     city: 'West Des Moines'
   },
   {
+    name: 'Q2',
+    category: 'Public',
+    description: 'Q2 Holdings, Inc. is a leading provider of digital transformation solutions for financial services, serving banks, credit unions, alternative finance companies, and fintechs in the U.S. and internationally. Q2 enables its financial institution and fintech customers to provide comprehensive, data-driven digital engagement solutions for consumers, small businesses, and corporate clients.',
+    facebook: 'Q2ebanking',
+    instagram: 'q2software',
+    twitter: 'Q2ebanking',
+    linkedin: 'q2software',
+    careers: 'https://www.q2.com/company/why-work-at-q2/careers',
+    city: 'Des Moines'
+  },
+  {
     name: 'BirdDogHR',
     category: 'Private',
     description:
