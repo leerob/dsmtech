@@ -110,9 +110,9 @@ export const COMPANIES = [
   },
   {
     name: 'Corteva',
-    category: 'Private',
+    category: 'Public',
     description:
-      'The Agriculture Division of DowDuPont™, Corteva Agriscience™, enriching the lives of farmers and consumers, ensuring progress for generations to come.',
+      'The once Agriculture Division of DowDuPont™, Corteva Agriscience™, a now independent company, enriches the lives of farmers and consumers, ensuring progress for generations to come.',
     facebook: 'corteva',
     instagram: 'corteva',
     twitter: 'corteva',
