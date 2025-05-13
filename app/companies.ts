@@ -180,15 +180,15 @@ export const COMPANIES = [
     city: 'Des Moines'
   },
   {
-    name: 'BirdDogHR',
+    name: 'Arcoro',
     category: 'Private',
     description:
-      'BirdDogHR simplifies talent management for hard-working organizations by providing recruitment and applicant tracking, onboarding, performance management, learning management, succession planning and managed services.',
-    facebook: 'BirdDogHR',
+      'Arcoro simplifies talent management for hard-working organizations by providing recruitment and applicant tracking, onboarding, performance management, learning management, succession planning and managed services.',
+    facebook: 'arcorohr',
     instagram: '',
-    twitter: 'BirdDogHR',
-    linkedin: 'BirdDogHR',
-    careers: 'https://birddoghr.com/company/careers',
+    twitter: 'arcorohr',
+    linkedin: 'arcorohr',
+    careers: 'https://arcoro.com/about/careers/',
     city: 'Urbandale'
   },
   {
