@@ -443,7 +443,7 @@ export const COMPANIES = [
     instagram: 'tractorzoom',
     twitter: 'tractorzoom',
     linkedin: 'tractor-zoom',
-    careers: 'https://tractorzoom.com/about-us/careers/',
+    careers: 'https://tractorzoom.com/aboutus/careers',
     city: 'Urbandale'
   },
   {
