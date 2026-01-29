@@ -134,7 +134,7 @@ let TableRow = (company) => {
         <SocialMedia {...company} />
       </td>
       <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium min-w-[120px]">
-        <a href={company.careers} className="text-blue-600 hover:text-blue-900">
+        <a href={company.careers} className="text-blue-600 hover:text-blue-900" target="_blank" rel="noopener noreferrer">
           View Jobs
         </a>
       </td>
