@@ -170,8 +170,8 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--cell-bg);
-  overflow-x: auto;
-  overflow-y: visible;
+  max-height: 70vh;
+  overflow: auto;
 }
 
 .sheet-table {
