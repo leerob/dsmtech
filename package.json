@@ -1,22 +1,13 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev --turbo",
-    "build": "next build",
-    "start": "next start"
+    "dev": "bun run build.ts --dev",
+    "build": "bun run build.ts",
+    "start": "bun run build.ts --dev"
   },
-  "dependencies": {
-    "@tailwindcss/postcss": "^4.0.0-beta.8",
-    "@tailwindcss/typography": "^0.5.15",
+  "devDependencies": {
     "@types/node": "22.10.2",
-    "@types/react": "19.0.2",
-    "@vercel/analytics": "^1.4.1",
-    "autoprefixer": "^10.4.20",
-    "next": "15.2.4",
-    "postcss": "^8.4.49",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "tailwindcss": "^4.0.0-beta.8",
     "typescript": "5.7.2"
   },
   "prettier": {

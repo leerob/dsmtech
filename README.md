@@ -4,6 +4,5 @@
 
 ### Built Using
 
-- [Next.js](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Vercel](https://vercel.com)
+- [Bun](https://bun.sh/)
+- Static HTML + CSS
