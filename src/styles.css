@@ -170,7 +170,8 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--cell-bg);
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: visible;
 }
 
 .sheet-table {
@@ -195,6 +196,7 @@ a:hover {
 .sheet-table thead th {
   position: sticky;
   top: 0;
+  z-index: 2;
   background: var(--header-bg);
   text-transform: uppercase;
   letter-spacing: 0.08em;
