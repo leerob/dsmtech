@@ -481,5 +481,17 @@ export const COMPANIES = [
     linkedin: 'peachpay',
     careers: 'https://apply.workable.com/peachpay/',
     city: 'Ames'
+  },
+  {
+    name: "Clark's Consulting",
+    category: 'Startup',
+    description:
+      "Clark's Consulting builds AI automation for mid-market teams — custom agents that do real work, end-to-end workflow automation, systems integration, and fractional engineering leadership. Principal Michael W. Clark is a Director of Software Engineering with nearly 30 years shipping production code.",
+    facebook: '',
+    instagram: '',
+    twitter: '',
+    linkedin: 'clarks-consulting',
+    careers: 'https://clarks.consulting/contact',
+    city: 'Des Moines'
   }
 ];
