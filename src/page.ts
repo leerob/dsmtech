@@ -1,14 +1,13 @@
-import type { Company } from './companies.ts';
+import type { Category, Company } from './companies.ts';
 
 const SITE_URL = 'https://dsmtech.io';
+const REPO_URL = 'https://github.com/leerob/dsmtech';
 const TITLE =
   'dsmtech – The best tech companies and startups in the Greater Des Moines area.';
 const DESCRIPTION =
   'An open, information-dense directory of tech companies and startups in Des Moines, Iowa — with direct links to their careers pages.';
 
-const REPO_URL = 'https://github.com/leerob/dsmtech';
-
-/** Escape text for safe interpolation into HTML text nodes and double-quoted attributes. */
+/** Escape text for safe interpolation into HTML text and double-quoted attributes. */
 const esc = (value: string): string =>
   value
     .replaceAll('&', '&amp;')
@@ -20,7 +19,12 @@ const esc = (value: string): string =>
 const logoPath = (name: string): string =>
   `/logos/${name.replaceAll(' ', '_').toLowerCase()}.jpg`;
 
-/* Monochrome marks (Simple Icons path data), drawn with currentColor. */
+const collator = new Intl.Collator('en', { sensitivity: 'base' });
+const byName = (a: Company, b: Company): number => collator.compare(a.name, b.name);
+
+// ---- icons ----
+
+/* Monochrome brand marks (Simple Icons path data), drawn with currentColor. */
 const MARKS = {
   linkedin:
     'M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z',
@@ -33,7 +37,7 @@ const MARKS = {
     'M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'
 } as const;
 
-/* Stroked utility icons (Lucide-style path data). */
+/* Stroked UI icons (Lucide-style path data). */
 const STROKES = {
   arrow: 'M7 17 17 7M8 7h9v9',
   search: 'M21 21l-4.35-4.35M19 11a8 8 0 1 1-16 0 8 8 0 0 1 16 0',
@@ -41,10 +45,10 @@ const STROKES = {
 } as const;
 
 /**
- * Every icon is defined once in an SVG sprite and referenced with <use>,
- * so 41 rows of social links cost a few bytes each instead of a full path.
+ * Each icon is defined once in an SVG sprite and referenced with <use>, so a
+ * social link costs a few bytes per row instead of repeating the full path.
  */
-const SPRITE = `<svg class="sprite" aria-hidden="true"><defs>
+const Sprite = `<svg class="sprite" aria-hidden="true"><defs>
 ${Object.entries(MARKS)
   .map(([id, d]) => `  <symbol id="i-${id}" viewBox="0 0 24 24"><path d="${d}"/></symbol>`)
   .join('\n')}
@@ -62,6 +66,8 @@ const stroked = (name: keyof typeof STROKES): string =>
 const ICON_ARROW = stroked('arrow');
 const ICON_SEARCH = stroked('search');
 const ICON_CLOSE = stroked('close');
+
+// ---- company data helpers ----
 
 interface SocialLink {
   label: string;
@@ -94,38 +100,17 @@ const socialLinks = (c: Company): SocialLink[] => {
   return links;
 };
 
-const socialCell = (c: Company): string => {
-  const links = socialLinks(c);
-  if (links.length === 0) return '<span class="dim">—</span>';
-  return links
-    .map(
-      (l) =>
-        `<a class="social" href="${esc(l.href)}" target="_blank" rel="noopener noreferrer" title="${esc(`${c.name} on ${l.label}`)}" aria-label="${esc(`${c.name} on ${l.label}`)}">${l.svg}</a>`
-    )
-    .join('');
-};
+interface Stats {
+  total: number;
+  cities: number;
+  countBy: (category: Category) => number;
+}
 
-const careersCell = (c: Company): string =>
-  c.careers
-    ? `<a class="jobs" href="${esc(c.careers)}" target="_blank" rel="noopener noreferrer">Jobs${ICON_ARROW}</a>`
-    : '<span class="dim">—</span>';
-
-const row = (c: Company, index: number): string => {
-  return `<tr class="co" data-name="${esc(c.name)}" data-category="${c.category}" data-city="${esc(c.city)}">
-  <td class="c-index" aria-hidden="true"></td>
-  <td class="c-company">
-    <div class="org">
-      <img src="${esc(logoPath(c.name))}" alt="" width="28" height="28" loading="${index < 12 ? 'eager' : 'lazy'}" decoding="async">
-      <span class="name">${esc(c.name)}</span>
-    </div>
-  </td>
-  <td class="c-desc">${esc(c.description.trim())}</td>
-  <td class="c-type"><span class="badge" data-category="${c.category}">${c.category}</span></td>
-  <td class="c-city">${esc(c.city)}</td>
-  <td class="c-social">${socialCell(c)}</td>
-  <td class="c-careers">${careersCell(c)}</td>
-</tr>`;
-};
+const getStats = (companies: Company[]): Stats => ({
+  total: companies.length,
+  cities: new Set(companies.map((c) => c.city)).size,
+  countBy: (category) => companies.filter((c) => c.category === category).length
+});
 
 const jsonLd = (companies: Company[]): string => {
   const data = {
@@ -157,24 +142,50 @@ const jsonLd = (companies: Company[]): string => {
   return JSON.stringify(data).replaceAll('<', '\\u003c');
 };
 
-export function renderPage(companies: Company[]): string {
-  const collator = new Intl.Collator('en', { sensitivity: 'base' });
-  const sorted = [...companies].sort((a, b) => collator.compare(a.name, b.name));
+// ---- table cells ----
 
-  const total = sorted.length;
-  const countBy = (cat: Company['category']) =>
-    sorted.filter((c) => c.category === cat).length;
-  const cities = new Set(sorted.map((c) => c.city)).size;
+const CompanyCell = (c: Company, index: number): string =>
+  `<td class="c-company">
+    <div class="org">
+      <img src="${esc(logoPath(c.name))}" alt="" width="28" height="28" loading="${index < 12 ? 'eager' : 'lazy'}" decoding="async">
+      <span class="name">${esc(c.name)}</span>
+    </div>
+  </td>`;
 
-  const segment = (value: string, label: string, count: number, checked = false) => `
-        <label class="seg">
-          <input type="radio" name="type" value="${value}"${checked ? ' checked' : ''}>
-          <span>${label}</span><span class="n">${count}</span>
-        </label>`;
+const TypeBadge = (category: Category): string =>
+  `<span class="badge" data-category="${category}">${category}</span>`;
 
-  return `<!doctype html>
-<html lang="en">
-<head>
+const SocialCell = (c: Company): string => {
+  const links = socialLinks(c);
+  if (links.length === 0) return '<span class="dim">—</span>';
+  return links
+    .map(
+      (l) =>
+        `<a class="social" href="${esc(l.href)}" target="_blank" rel="noopener noreferrer" title="${esc(`${c.name} on ${l.label}`)}" aria-label="${esc(`${c.name} on ${l.label}`)}">${l.svg}</a>`
+    )
+    .join('');
+};
+
+const CareersCell = (c: Company): string =>
+  c.careers
+    ? `<a class="jobs" href="${esc(c.careers)}" target="_blank" rel="noopener noreferrer">Jobs${ICON_ARROW}</a>`
+    : '<span class="dim">—</span>';
+
+const CompanyRow = (c: Company, index: number): string =>
+  `<tr class="co" data-name="${esc(c.name)}" data-category="${c.category}" data-city="${esc(c.city)}">
+  <td class="c-index" aria-hidden="true"></td>
+  ${CompanyCell(c, index)}
+  <td class="c-desc">${esc(c.description.trim())}</td>
+  <td class="c-type">${TypeBadge(c.category)}</td>
+  <td class="c-city">${esc(c.city)}</td>
+  <td class="c-social">${SocialCell(c)}</td>
+  <td class="c-careers">${CareersCell(c)}</td>
+</tr>`;
+
+// ---- page sections ----
+
+const Head = (companies: Company[]): string =>
+  `<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
@@ -197,28 +208,38 @@ export function renderPage(companies: Company[]): string {
   <meta name="twitter:title" content="${esc(TITLE)}">
   <meta name="twitter:description" content="${esc(DESCRIPTION)}">
   <meta name="twitter:image" content="${SITE_URL}/opengraph-image.jpg">
-  <script type="application/ld+json">${jsonLd(sorted)}</script>
-</head>
-<body>
-  ${SPRITE}
-  <a class="skip" href="#companies">Skip to companies table</a>
+  <script type="application/ld+json">${jsonLd(companies)}</script>
+</head>`;
 
-  <header class="site-header">
+const SkipLink = `<a class="skip" href="#companies">Skip to companies table</a>`;
+
+const Header = `<header class="site-header">
     <div class="wrap bar">
       <a class="wordmark" href="/">dsm<span>tech</span></a>
-      <span class="chip" aria-hidden="true">Des Moines · IA</span>
       <nav class="site-nav" aria-label="Site">
         <button type="button" class="navlink" popovertarget="about">About</button>
         <a class="navlink" href="${REPO_URL}" target="_blank" rel="noopener noreferrer">${mark('github')}GitHub</a>
       </nav>
     </div>
-  </header>
+  </header>`;
 
-  <section class="toolbar" aria-label="Search and filter">
+const Segment = (value: string, label: string, count: number, checked = false): string => `
+        <label class="seg">
+          <input type="radio" name="type" value="${value}"${checked ? ' checked' : ''}>
+          <span>${label}</span><span class="n">${count}</span>
+        </label>`;
+
+const SegmentedFilter = (stats: Stats): string =>
+  `<fieldset class="segmented">
+            <legend class="sr-only">Filter by company type</legend>${Segment('', 'All', stats.total, true)}${Segment('Startup', 'Startups', stats.countBy('Startup'))}${Segment('Private', 'Private', stats.countBy('Private'))}${Segment('Public', 'Public', stats.countBy('Public'))}
+          </fieldset>`;
+
+const Toolbar = (stats: Stats): string =>
+  `<section class="toolbar" aria-label="Search and filter">
     <div class="wrap">
       <hgroup class="intro">
         <h1>The tech companies &amp; startups of Greater Des Moines</h1>
-        <p>${total} companies across ${cities} metro cities — community-maintained, with direct links to careers pages.</p>
+        <p>${stats.total} companies across ${stats.cities} metro cities — community-maintained, with direct links to careers pages.</p>
       </hgroup>
       <search>
         <form id="filters" autocomplete="off">
@@ -227,16 +248,15 @@ export function renderPage(companies: Company[]): string {
             <input type="search" id="q" name="q" placeholder="Search companies, products, cities…" spellcheck="false" autocapitalize="off">
             <kbd>/</kbd>
           </label>
-          <fieldset class="segmented">
-            <legend class="sr-only">Filter by company type</legend>${segment('', 'All', total, true)}${segment('Startup', 'Startups', countBy('Startup'))}${segment('Private', 'Private', countBy('Private'))}${segment('Public', 'Public', countBy('Public'))}
-          </fieldset>
-          <p class="hits"><output id="count" form="filters">${total}</output>&hairsp;/&hairsp;${total} shown</p>
+          ${SegmentedFilter(stats)}
+          <p class="hits"><output id="count" form="filters">${stats.total}</output>&hairsp;/&hairsp;${stats.total} shown</p>
         </form>
       </search>
     </div>
-  </section>
+  </section>`;
 
-  <main class="sheet">
+const CompaniesTable = (companies: Company[]): string =>
+  `<main class="sheet">
     <table class="companies" id="companies">
       <caption class="sr-only">Tech companies in the Greater Des Moines area</caption>
       <colgroup>
@@ -254,7 +274,7 @@ export function renderPage(companies: Company[]): string {
         </tr>
       </thead>
       <tbody>
-${sorted.map(row).join('\n')}
+${companies.map(CompanyRow).join('\n')}
         <tr class="empty">
           <td colspan="7">
             <p>No companies match your search.</p>
@@ -263,16 +283,18 @@ ${sorted.map(row).join('\n')}
         </tr>
       </tbody>
     </table>
-  </main>
+  </main>`;
 
-  <footer class="site-footer">
+const Footer = (stats: Stats): string =>
+  `<footer class="site-footer">
     <div class="wrap bar">
       <p>Maintained by the community — <a href="${REPO_URL}" target="_blank" rel="noopener noreferrer">add or fix a company</a></p>
-      <p class="meta"><a href="/api/companies.json">api</a> · ${total} companies · ${cities} cities · zero dependencies, built with Bun</p>
+      <p class="meta"><a href="/api/companies.json">api</a> · ${stats.total} companies · ${stats.cities} cities · zero dependencies, built with Bun</p>
     </div>
-  </footer>
+  </footer>`;
 
-  <aside id="about" popover aria-labelledby="about-title">
+const AboutDialog = (total: number): string =>
+  `<aside id="about" popover aria-labelledby="about-title">
     <header>
       <h2 id="about-title">About dsmtech</h2>
       <button type="button" class="close" popovertarget="about" popovertargetaction="hide" aria-label="Close">${ICON_CLOSE}</button>
@@ -294,7 +316,28 @@ ${sorted.map(row).join('\n')}
       <code>src/companies.ts</code> and <a href="${REPO_URL}" target="_blank" rel="noopener noreferrer">open a pull request</a>.
     </p>
     <footer>open data · <a href="/api/companies.json">/api/companies.json</a> · built with Bun</footer>
-  </aside>
+  </aside>`;
+
+export function renderPage(companies: Company[]): string {
+  const sorted = [...companies].sort(byName);
+  const stats = getStats(sorted);
+
+  return `<!doctype html>
+<html lang="en">
+${Head(sorted)}
+<body>
+  ${Sprite}
+  ${SkipLink}
+
+  ${Header}
+
+  ${Toolbar(stats)}
+
+  ${CompaniesTable(sorted)}
+
+  ${Footer(stats)}
+
+  ${AboutDialog(stats.total)}
 </body>
 </html>
 `;
