@@ -1,4 +1,31 @@
-export const COMPANIES = [
+/**
+ * The dataset behind dsmtech.io — tech companies in the Greater Des Moines area.
+ *
+ * To add or fix a company, edit this file and open a pull request.
+ * Logos live in `public/logos/` as 400×400 JPEGs named after the company
+ * (lowercased, spaces replaced with underscores).
+ */
+
+export type Category = 'Startup' | 'Private' | 'Public';
+
+export interface Company {
+  name: string;
+  category: Category;
+  description: string;
+  /** Social handles — empty string means the company has no presence there. */
+  facebook: string;
+  instagram: string;
+  /** X (formerly Twitter) handle. */
+  twitter: string;
+  /** LinkedIn company slug (linkedin.com/company/<slug>). */
+  linkedin: string;
+  /** Careers page URL — empty string if none is known. */
+  careers: string;
+  /** Headquarters city in the Des Moines metro (all in Iowa). */
+  city: string;
+}
+
+export const COMPANIES: Company[] = [
   {
     name: 'Hy-Vee',
     category: 'Private',
@@ -44,8 +71,7 @@ export const COMPANIES = [
     instagram: 'granular_ag',
     twitter: 'granularag',
     linkedin: 'granular',
-    careers: '',
-    // link is no longer valid
+    careers: '', // link is no longer valid
     city: 'Johnston'
   },
   {
@@ -153,7 +179,7 @@ export const COMPANIES = [
     instagram: 'MeredithCorporation',
     twitter: 'MeredithCorp',
     linkedin: 'meredith',
-    careers: 'https://www.dotdashmeredith.com/careers', //updated link
+    careers: 'https://www.dotdashmeredith.com/careers', // updated link
     city: 'Des Moines'
   },
   {
@@ -171,7 +197,8 @@ export const COMPANIES = [
   {
     name: 'Q2',
     category: 'Public',
-    description: 'Q2 Holdings, Inc. is a leading provider of digital transformation solutions for financial services, serving banks, credit unions, alternative finance companies, and fintechs in the U.S. and internationally. Q2 enables its financial institution and fintech customers to provide comprehensive, data-driven digital engagement solutions for consumers, small businesses, and corporate clients.',
+    description:
+      'Q2 Holdings, Inc. is a leading provider of digital transformation solutions for financial services, serving banks, credit unions, alternative finance companies, and fintechs in the U.S. and internationally. Q2 enables its financial institution and fintech customers to provide comprehensive, data-driven digital engagement solutions for consumers, small businesses, and corporate clients.',
     facebook: 'Q2ebanking',
     instagram: 'q2software',
     twitter: 'Q2ebanking',
@@ -212,7 +239,7 @@ export const COMPANIES = [
     instagram: 'limelighthealth',
     twitter: 'limelighthealth',
     linkedin: 'limelight-health',
-    careers: 'https://www.bamboohr.com/careers/', //updated link
+    careers: 'https://www.bamboohr.com/careers/', // updated link
     city: 'Des Moines'
   },
   {
@@ -273,7 +300,7 @@ export const COMPANIES = [
     twitter: 'Coviance',
     linkedin: 'Coviance',
     careers: 'https://www.coviance.com/company/careers',
-    city: 'West Des Moines' //rebranding
+    city: 'West Des Moines' // rebranding
   },
   {
     name: 'Wellmark',
@@ -368,7 +395,7 @@ export const COMPANIES = [
     instagram: 'kumandgo',
     twitter: 'kumandgo',
     linkedin: 'kum-&-go',
-    careers: 'https://careers.maverik.com/', //new link
+    careers: 'https://careers.maverik.com/', // new link
     city: 'Des Moines'
   },
   {
@@ -400,7 +427,7 @@ export const COMPANIES = [
     name: 'Trility',
     category: 'Private',
     description:
-      'Trility Consulting is a business and technology solutions company who concentrates on delivering what you want, the way you want it, when you want it. We believe its your journey. We want to help. ',
+      'Trility Consulting is a business and technology solutions company who concentrates on delivering what you want, the way you want it, when you want it. We believe its your journey. We want to help.',
     facebook: '',
     instagram: '',
     twitter: 'trilitygroup',
@@ -418,8 +445,7 @@ export const COMPANIES = [
     instagram: '',
     twitter: 'hatchlings',
     linkedin: '',
-    careers: '',
-    // link is no longer exists
+    careers: '', // link no longer exists
     city: 'Des Moines'
   },
   {
