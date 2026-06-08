@@ -139,18 +139,6 @@
     }
   }
 
-  .chip {
-    font-family: var(--font-mono);
-    font-size: 9.5px;
-    text-transform: uppercase;
-    letter-spacing: 0.09em;
-    color: var(--ink-3);
-    border: 1px solid var(--line-strong);
-    border-radius: 999px;
-    padding: 2.5px 8px;
-    white-space: nowrap;
-  }
-
   .site-nav {
     margin-inline-start: auto;
     display: flex;
@@ -248,13 +236,21 @@
   }
 
   @media (width <= 720px) {
+    /* Let the page itself scroll (not the nested sheet) so touch scrolling on
+       phones feels native — no janky inner scroll container, no sideways drift. */
+    body {
+      display: block;
+      block-size: auto;
+      min-block-size: 100dvh;
+    }
+
+    .sheet {
+      overflow: visible;
+    }
+
     .toolbar .wrap {
       align-items: stretch;
       flex-direction: column;
-    }
-
-    .chip {
-      display: none;
     }
 
     .site-footer .bar {
@@ -529,7 +525,6 @@
     content: '↓';
   }
 
-  /* body cells */
   .companies td {
     padding: 9px 12px;
     border-block-end: 1px solid var(--line);
@@ -609,7 +604,6 @@
     opacity: 0.7;
   }
 
-  /* category badges */
   .badge {
     display: inline-flex;
     align-items: center;
@@ -672,7 +666,6 @@
     }
   }
 
-  /* careers link */
   .jobs {
     display: inline-flex;
     align-items: center;
@@ -736,6 +729,83 @@
     .c-index,
     .w-index {
       display: none;
+    }
+  }
+
+  /* On phones the seven-column table can't fit, so each row reflows into a
+     self-contained card. This drops the horizontal scroll that made the table
+     hard to read and lets the page scroll cleanly in one direction. */
+  @media (width <= 720px) {
+    .companies {
+      display: block;
+      min-inline-size: 0;
+    }
+
+    .companies colgroup,
+    .companies thead,
+    .companies .c-index {
+      display: none;
+    }
+
+    .companies tbody {
+      display: block;
+    }
+
+    .companies tr.co {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas:
+        'company company type'
+        'desc    desc    desc'
+        'city    social  careers';
+      align-items: center;
+      column-gap: 12px;
+      row-gap: 8px;
+      padding: 14px var(--pad);
+      border-block-end: 1px solid var(--line);
+    }
+
+    .companies tr.co[hidden] {
+      display: none;
+    }
+
+    .companies td {
+      padding: 0;
+      border: 0;
+      min-inline-size: 0;
+    }
+
+    .c-company {
+      grid-area: company;
+    }
+    .c-desc {
+      grid-area: desc;
+    }
+    .c-type {
+      grid-area: type;
+    }
+    .c-city {
+      grid-area: city;
+    }
+    .c-social {
+      grid-area: social;
+      justify-self: start;
+    }
+    .c-careers {
+      grid-area: careers;
+      justify-self: end;
+    }
+
+    .c-company .name {
+      font-size: 13.5px;
+    }
+
+    .companies tr.empty {
+      display: none;
+    }
+
+    tbody:not(:has(tr.co:not([hidden]))) tr.empty {
+      display: block;
     }
   }
 }
