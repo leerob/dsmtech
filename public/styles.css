@@ -742,9 +742,49 @@
     }
 
     .companies colgroup,
-    .companies thead,
     .companies .c-index {
       display: none;
+    }
+
+    /* No column headers in card mode, so the header row becomes a compact sort
+       bar — keeps the Company / Type / HQ controls reachable on phones instead
+       of hiding them (app.js binds sorting to these header buttons). */
+    .companies thead {
+      display: block;
+    }
+
+    .companies thead tr {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      padding: 10px var(--pad);
+      border-block-end: 1px solid var(--line);
+    }
+
+    .companies thead th {
+      position: static;
+      padding: 0;
+      background: none;
+      backdrop-filter: none;
+      border: 0;
+    }
+
+    /* drop the non-interactive headers (Description / Social / Careers) */
+    .companies thead th:not(:has(button)) {
+      display: none;
+    }
+
+    .companies thead th button {
+      inline-size: auto;
+      padding: 5px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+    }
+
+    /* no hover on touch, so surface the sort affordance up front */
+    .companies thead th button::after {
+      opacity: 0.5;
     }
 
     .companies tbody {
