@@ -10,7 +10,7 @@
  *   dist/...                  everything in public/ (styles, script, logos, favicon)
  */
 
-import { cp, mkdir, rm } from 'node:fs/promises';
+import { cp, rm } from 'node:fs/promises';
 import { COMPANIES } from './companies.ts';
 import { renderPage } from './page.ts';
 
@@ -20,9 +20,9 @@ const DIST = new URL('dist/', ROOT);
 const started = performance.now();
 
 await rm(DIST, { recursive: true, force: true });
-await mkdir(new URL('api/', DIST), { recursive: true });
 await cp(new URL('public/', ROOT), DIST, { recursive: true });
 
+// Bun.write creates missing directories (dist/, dist/api/) on its own.
 await Bun.write(new URL('index.html', DIST), renderPage(COMPANIES));
 await Bun.write(
   new URL('api/companies.json', DIST),
