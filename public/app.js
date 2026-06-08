@@ -13,7 +13,6 @@ const rows = [...tbody.querySelectorAll('tr.co')];
 
 const collator = new Intl.Collator('en', { sensitivity: 'base' });
 
-// Search haystack per row, derived from the rendered cells.
 const haystack = new Map(
   rows.map((row) => [
     row,

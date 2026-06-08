@@ -525,7 +525,6 @@
     content: '↓';
   }
 
-  /* body cells */
   .companies td {
     padding: 9px 12px;
     border-block-end: 1px solid var(--line);
@@ -605,7 +604,6 @@
     opacity: 0.7;
   }
 
-  /* category badges */
   .badge {
     display: inline-flex;
     align-items: center;
@@ -668,7 +666,6 @@
     }
   }
 
-  /* careers link */
   .jobs {
     display: inline-flex;
     align-items: center;
