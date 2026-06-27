@@ -387,15 +387,15 @@ export const COMPANIES: Company[] = [
     city: 'Des Moines'
   },
   {
-    name: 'Kum and Go',
+    name: 'Maverik',
     category: 'Private',
     description:
-      'Kum & Go is a family-owned operation that employ 5,000+ associates in more than 400 stores across 11 states throughout the Midwest.',
-    facebook: 'kumandgo',
-    instagram: 'kumandgo',
-    twitter: 'kumandgo',
-    linkedin: 'kum-&-go',
-    careers: 'https://careers.maverik.com/', // new link
+      'Maverik (formerly Kum & Go) is a family-owned convenience store chain with 5,000+ associates in more than 400 stores across 11 states throughout the Midwest.',
+    facebook: 'maverik',
+    instagram: 'maverik',
+    twitter: 'maverik',
+    linkedin: 'maverik-inc',
+    careers: 'https://careers.maverik.com/',
     city: 'Des Moines'
   },
   {
